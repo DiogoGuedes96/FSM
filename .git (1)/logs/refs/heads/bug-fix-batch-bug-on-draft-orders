@@ -1,0 +1,6 @@
+0000000000000000000000000000000000000000 c275d82fd959c42a14d0f1bec3c09ccf154a962c Diogo Guedes <diogo.guedes@integer.pt> 1716454972 +0100	branch: Created from HEAD
+c275d82fd959c42a14d0f1bec3c09ccf154a962c 689f9f04713bd9f9629895e8d16d37cc466ab6f4 Diogo Guedes <diogo.guedes@integer.pt> 1716455008 +0100	commit: Fix batch bug on draft orders
+689f9f04713bd9f9629895e8d16d37cc466ab6f4 70b4bdf4293d99d9b30f06b92e76ff00bf5655e5 Diogo Guedes <diogo.guedes@integer.pt> 1716455517 +0100	commit: Fix batch bug on draft orders
+70b4bdf4293d99d9b30f06b92e76ff00bf5655e5 120342efaaac9f9e739a7e0d8690fa7e5d518647 Diogo Guedes <diogo.guedes@integer.pt> 1717158052 +0100	commit: Request number optional
+120342efaaac9f9e739a7e0d8690fa7e5d518647 702c44d374d911bdff6351d0ab77ad5745944a1b Diogo Guedes <diogo.guedes@integer.pt> 1717158063 +0100	commit: Request number optional
+702c44d374d911bdff6351d0ab77ad5745944a1b 68082f8d3276e81c750c525a7a059c717bf1abc3 Diogo Guedes <diogo.guedes@integer.pt> 1717158270 +0100	commit: Request number optional

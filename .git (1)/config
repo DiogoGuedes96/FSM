@@ -1,0 +1,376 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = git@ssh.dev.azure.com:v3/integer-consulting/Frutaria_Sao_Miguel/Frutaria_Sao_Miguel
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[branch "dev"]
+	remote = origin
+	merge = refs/heads/dev
+	vscode-merge-base = origin/master
+[branch "feature/23485-test-laravel-modules-dependencies"]
+	remote = origin
+	merge = refs/heads/feature/23485-test-laravel-modules-dependencies
+[branch "feature/23485-asterisk-connection-artisan-command"]
+	remote = origin
+	merge = refs/heads/feature/23485-asterisk-connection-artisan-command
+[branch "feature/23398-active-calls-frontend"]
+	remote = origin
+	merge = refs/heads/feature/23398-active-calls-frontend
+[branch "feature/23485-create-asterisk-credentials-in-bd"]
+	remote = origin
+	merge = refs/heads/feature/23485-create-asterisk-credentials-in-bd
+[branch "feature/23421-Primavera-Products"]
+	remote = origin
+	merge = refs/heads/feature/23421-Primavera-Products
+[branch "feature/23485-bms-products-clients-modules-migrations"]
+	remote = origin
+	merge = refs/heads/feature/23485-bms-products-clients-modules-migrations
+[branch "feature/23485-eloquent-relations"]
+	remote = origin
+	merge = refs/heads/feature/23485-eloquent-relations
+[branch "feature/23485-modules-npm-control-page"]
+	remote = origin
+	merge = refs/heads/feature/23485-modules-npm-control-page
+[branch "feature/23485-fix-build"]
+	remote = origin
+	merge = refs/heads/feature/23485-fix-build
+[branch "feature/23485-bms-products-clients-db-triggers"]
+	remote = origin
+	merge = refs/heads/feature/23485-bms-products-clients-db-triggers
+[branch "feature/23485-asterisk-credentials-fix"]
+	remote = origin
+	merge = refs/heads/feature/23485-asterisk-credentials-fix
+[branch "feature/23485-fix-update-clients-products"]
+	remote = origin
+	merge = refs/heads/feature/23485-fix-update-clients-products
+[branch "feature23485-create-address-db-trigger"]
+	remote = origin
+	merge = refs/heads/feature23485-create-address-db-trigger
+[branch "feature/23485-login-page-refactoring"]
+	remote = origin
+	merge = refs/heads/feature/23485-login-page-refactoring
+[branch "feature/23485-implement-new-primavera-api"]
+	remote = origin
+	merge = refs/heads/feature/23485-implement-new-primavera-api
+[branch "feature/23485-implement-new-primavera-api2"]
+	remote = origin
+	merge = refs/heads/feature/23485-implement-new-primavera-api2
+[branch "feature/23485-try-fix-asterisk"]
+	remote = origin
+	merge = refs/heads/feature/23485-try-fix-asterisk
+[branch "feature/23654-missed-calls-page-logic-fix"]
+	remote = origin
+	merge = refs/heads/feature/23654-missed-calls-page-logic-fix
+[branch "feature/24023-BUG-add-delivery-date-"]
+	remote = origin
+	merge = refs/heads/feature/24023-BUG-add-delivery-date-&-period-to-checkout
+[branch "feature/24023-BUG-add-delivery-date-e-period-to-checkout"]
+	remote = origin
+	merge = refs/heads/feature/24023-BUG-add-delivery-date-e-period-to-checkout
+[branch "feature/24023-bug-salvar-e-apresentar-campo-zona-na-morada-cliente"]
+	remote = origin
+	merge = refs/heads/feature/24023-bug-salvar-e-apresentar-campo-zona-na-morada-cliente
+[branch "feature/25214-Add-BlackList-phones-to-calls"]
+	remote = origin
+	merge = refs/heads/feature/25214-Add-BlackList-phones-to-calls
+[branch "feature/25214-asterisk-sh-update"]
+	remote = origin
+	merge = refs/heads/feature/25214-asterisk-sh-update
+[branch "feature/24023-add-zone-logic-to-order-checkout-and-summary"]
+	remote = origin
+	merge = refs/heads/feature/24023-add-zone-logic-to-order-checkout-and-summary
+[branch "feature/24023-add-stock-info-on-shoppingCart-and-checkout"]
+	remote = origin
+	merge = refs/heads/feature/24023-add-stock-info-on-shoppingCart-and-checkout
+[pull]
+	rebase = false
+[branch "feature/24124-add-categories-and-subCategories-tables-on-database"]
+	remote = origin
+	merge = refs/heads/feature/24124-add-categories-and-subCategories-tables-on-database
+[branch "feature/25809-bug-fixes-and-improves-sprint2"]
+	remote = origin
+	merge = refs/heads/feature/25809-bug-fixes-and-improves-sprint2
+[branch "feature/24022-order-list-and-oder-set-status-apis"]
+	remote = origin
+	merge = refs/heads/feature/24022-order-list-and-oder-set-status-apis
+[branch "feature/25782-fork-order-and-remove-products-from-order-apis"]
+	remote = origin
+	merge = refs/heads/feature/25782-fork-order-and-remove-products-from-order-apis
+[branch "feature/25809-refactor-order-save-and-fork-order"]
+	remote = origin
+	merge = refs/heads/feature/25809-refactor-order-save-and-fork-order
+[branch "feature/25809-refactoring-orders-and-fixing-bugs"]
+	remote = origin
+	merge = refs/heads/feature/25809-refactoring-orders-and-fixing-bugs
+[branch "feature/25809-api-bug-fixes"]
+	remote = origin
+	merge = refs/heads/feature/25809-api-bug-fixes
+[branch "feature/25787-order-search-page"]
+	remote = origin
+	merge = refs/heads/feature/25787-order-search-page
+[branch "feature/25746-confirmar-produtos"]
+	remote = origin
+	merge = refs/heads/feature/25746-confirmar-produtos
+[branch "feature/26394-schedule-module-logic-api-structure"]
+	remote = origin
+	merge = refs/heads/feature/26394-schedule-module-logic-api-structure
+[branch "feature/spring-4-bug-fixes"]
+	remote = origin
+	merge = refs/heads/feature/spring-4-bug-fixes
+[branch "feature/26394-get-reminders-by-minute-endpoint"]
+	remote = origin
+	merge = refs/heads/feature/26394-get-reminders-by-minute-endpoint
+[branch "feature/26570-remove-ghost-call"]
+	remote = origin
+	merge = refs/heads/feature/26570-remove-ghost-call
+[branch "feature/26570-change-product-search"]
+	remote = origin
+	merge = refs/heads/feature/26570-change-product-search
+[branch "feature/26570-bug-fixes"]
+	remote = origin
+	merge = refs/heads/feature/26570-bug-fixes
+[branch "bug/26768-fix-order-notes"]
+	remote = origin
+	merge = refs/heads/bug/26768-fix-order-notes
+[branch "feature/26570-add-product-batch-logic"]
+	remote = origin
+	merge = refs/heads/feature/26570-add-product-batch-logic
+[branch "feature/26570-add-batch-number-to-orderProducts-tables"]
+	remote = origin
+	merge = refs/heads/feature/26570-add-batch-number-to-orderProducts-tables
+[branch "feature/26570-add-no-remind-on-reminder"]
+	remote = origin
+	merge = refs/heads/feature/26570-add-no-remind-on-reminder
+[branch "feature/26570-change-order-product-notes-on-pending-page"]
+	remote = origin
+	merge = refs/heads/feature/26570-change-order-product-notes-on-pending-page
+[branch "featue/26570-add-stock-filter-on-product-list"]
+	remote = origin
+	merge = refs/heads/featue/26570-add-stock-filter-on-product-list
+[branch "feature/26579-add-order-info-on-tracking-order-side-list"]
+	remote = origin
+	merge = refs/heads/feature/26579-add-order-info-on-tracking-order-side-list
+[branch "feature/26570-change-En-text-to-PT"]
+	remote = origin
+	merge = refs/heads/feature/26570-change-En-text-to-PT
+[branch "bug/27033-fix-trash-active-call"]
+	remote = origin
+	merge = refs/heads/bug/27033-fix-trash-active-call
+[branch "bug/27051-fix-product-seatch-bar"]
+	remote = origin
+	merge = refs/heads/bug/27051-fix-product-seatch-bar
+[branch "bug/27104-fux-product-scroll"]
+	remote = origin
+	merge = refs/heads/bug/27104-fux-product-scroll
+[branch "bug/27178-fix-calls-table"]
+	remote = origin
+	merge = refs/heads/bug/27178-fix-calls-table
+[branch "bug/27256-fix-total-product-value-afet-conversion"]
+	remote = origin
+	merge = refs/heads/bug/27256-fix-total-product-value-afet-conversion
+[branch "feature/26570-finish-porduct-batch-logic"]
+	remote = origin
+	merge = refs/heads/feature/26570-finish-porduct-batch-logic
+[branch "feature/26570-add-api-error-handling-on-expedition"]
+	remote = origin
+	merge = refs/heads/feature/26570-add-api-error-handling-on-expedition
+[branch "bug/27186-fix-arrows-on-product-filters"]
+	remote = origin
+	merge = refs/heads/bug/27186-fix-arrows-on-product-filters
+[branch "bug/27283-fix-Nan-on-calls-page"]
+	remote = origin
+	merge = refs/heads/bug/27283-fix-Nan-on-calls-page
+[branch "bug/27086-fix-select-today-on-shcedule-calendar"]
+	remote = origin
+	merge = refs/heads/bug/27086-fix-select-today-on-shcedule-calendar
+[branch "feature/refactore-bms-schedule"]
+	remote = origin
+	merge = refs/heads/feature/refactore-bms-schedule
+[branch "feature/26570-fix-bug-when-importing-product-batches"]
+	remote = origin
+	merge = refs/heads/feature/26570-fix-bug-when-importing-product-batches
+[branch "feature/26394-add-loading-on-create-event-reminder"]
+	remote = origin
+	merge = refs/heads/feature/26394-add-loading-on-create-event-reminder
+[branch "feature/26394-Add-read-flag-to-event-remebers"]
+	remote = origin
+	merge = refs/heads/feature/26394-Add-read-flag-to-event-remebers
+[branch "feature/26394-refactor-reminder-modal-and-add-reminders-list"]
+	remote = origin
+	merge = refs/heads/feature/26394-refactor-reminder-modal-and-add-reminders-list
+[branch "feature/27421-text-improvements"]
+	remote = origin
+	merge = refs/heads/feature/27421-text-improvements
+[branch "demo"]
+	remote = origin
+	merge = refs/heads/demo
+[branch "feature/place-demo-images-on-demo-sv"]
+	remote = origin
+	merge = refs/heads/feature/place-demo-images-on-demo-sv
+[branch "bug/27439-fix-pass-values-on-remove-product"]
+	remote = origin
+	merge = refs/heads/bug/27439-fix-pass-values-on-remove-product
+[branch "feature/27421-fix-products-filter-stock-btn-label"]
+	remote = origin
+	merge = refs/heads/feature/27421-fix-products-filter-stock-btn-label
+[branch "feature/272421-fix-demo-sv-copygright-messages"]
+	remote = origin
+	merge = refs/heads/feature/272421-fix-demo-sv-copygright-messages
+[branch "feature/26570-add-discount-calc-to-clients-triggers"]
+	remote = origin
+	merge = refs/heads/feature/26570-add-discount-calc-to-clients-triggers
+[branch "bug/27932-fix-white-spaces-on-create-event"]
+	remote = origin
+	merge = refs/heads/bug/27932-fix-white-spaces-on-create-event
+[branch "feature/27997-create-orders-filter-by-zone"]
+	remote = origin
+	merge = refs/heads/feature/27997-create-orders-filter-by-zone
+[branch "feature/27997-socket-io-implementation"]
+	remote = origin
+	merge = refs/heads/feature/27997-socket-io-implementation
+[branch "bug/27439-Fix-product-quantity-on-shopping-cart"]
+	remote = origin
+	merge = refs/heads/bug/27439-Fix-product-quantity-on-shopping-cart
+[branch "feature/27984-create-order-flow-bug-fixes"]
+	remote = origin
+	merge = refs/heads/feature/27984-create-order-flow-bug-fixes
+[branch "feature/27984-create-order-flow-bug-fixes-pt2"]
+	remote = origin
+	merge = refs/heads/feature/27984-create-order-flow-bug-fixes-pt2
+[branch "feature/28180-editar-encomendas-pendentes-em-preparacao-e-expedidas"]
+	remote = origin
+	merge = refs/heads/feature/28180-editar-encomendas-pendentes-em-preparacao-e-expedidas
+[branch "feature/27997-make-cache-system-to-block-orders"]
+	remote = origin
+	merge = refs/heads/feature/27997-make-cache-system-to-block-orders
+[branch "test"]
+	remote = origin
+	merge = refs/heads/test
+[branch "feature/28637-change-quantity-increase"]
+	remote = origin
+	merge = refs/heads/feature/28637-change-quantity-increase
+[branch "feature/28512-fix-product-batch-import"]
+	remote = origin
+	merge = refs/heads/feature/28512-fix-product-batch-import
+[branch "bug/28644-clean-borwserToken-when-logoff"]
+	remote = origin
+	merge = refs/heads/bug/28644-clean-borwserToken-when-logoff
+[branch "bug/28655-fix-cancel-steal-blocked-order"]
+	remote = origin
+	merge = refs/heads/bug/28655-fix-cancel-steal-blocked-order
+[branch "feature/27997-fix-batch-and-other-bugs"]
+	remote = origin
+	merge = refs/heads/feature/27997-fix-batch-and-other-bugs
+[branch "feature/28512-temporary-fix-to-product-batches"]
+	remote = origin
+	merge = refs/heads/feature/28512-temporary-fix-to-product-batches
+[branch "feature/outgoing-asterisk-calls-logic"]
+	remote = origin
+	merge = refs/heads/feature/outgoing-asterisk-calls-logic
+[branch "bug/fix-caller-phone-bug"]
+	remote = origin
+	merge = refs/heads/bug/fix-caller-phone-bug
+[branch "hotfix/central-telefonica"]
+	remote = origin
+	merge = refs/heads/hotfix/central-telefonica
+[branch "feature/31147-fixes-in-draft-orders-tab"]
+	vscode-merge-base = dev
+	remote = origin
+	merge = refs/heads/feature/31147-fixes-in-draft-orders-tab
+[branch "bug/31149-add-phone2-to-client-addresses-calls-module"]
+	vscode-merge-base = dev
+	remote = origin
+	merge = refs/heads/bug/31149-add-phone2-to-client-addresses-calls-module
+[branch "bug/31645-add-zone-filter-in-all-order-tabs"]
+	vscode-merge-base = bug/31149-add-phone2-to-client-addresses-calls-module
+	remote = origin
+	merge = refs/heads/bug/31645-add-zone-filter-in-all-order-tabs
+[branch "bug/31679-fix-bugs-on-shopping-cart"]
+	vscode-merge-base = bug/31645-add-zone-filter-in-all-order-tabs
+	remote = origin
+	merge = refs/heads/bug/31679-fix-bugs-on-shopping-cart
+[branch "bug/31946-modify-pdf-values"]
+	vscode-merge-base = dev
+	remote = origin
+	merge = refs/heads/bug/31946-modify-pdf-values
+[branch "bug/31948-fix-canceled-orders-order"]
+	vscode-merge-base = dev
+	remote = origin
+	merge = refs/heads/bug/31948-fix-canceled-orders-order
+[branch "bug/31964-order-createdBy-preparedBy-info-add"]
+	vscode-merge-base = bug/31948-fix-canceled-orders-order
+	remote = origin
+	merge = refs/heads/bug/31964-order-createdBy-preparedBy-info-add
+[branch "fix/fixes-march-2024"]
+	vscode-merge-base = origin/bug/31964-order-createdBy-preparedBy-info-add
+	remote = origin
+	merge = refs/heads/fix/fixes-march-2024
+[branch "fix/import-batches-fix"]
+	vscode-merge-base = origin/dev
+	remote = origin
+	merge = refs/heads/fix/import-batches-fix
+[branch "release-28-03-2024"]
+	vscode-merge-base = origin/fix/import-batches-fix
+	remote = origin
+	merge = refs/heads/release-28-03-2024
+[branch "release-04-04-2024"]
+	remote = origin
+	merge = refs/heads/release-04-04-2024
+[branch "feature/finish-client-client-bar-products-filters"]
+	vscode-merge-base = origin/dev
+	remote = origin
+	merge = refs/heads/feature/finish-client-client-bar-products-filters
+[branch "feature-import-clients-contacts-from-primavera-crm"]
+	vscode-merge-base = origin/dev
+	remote = origin
+	merge = refs/heads/feature-import-clients-contacts-from-primavera-crm
+[branch "fix/fix-order-request-number-while-zero"]
+	vscode-merge-base = origin/dev
+	remote = origin
+	merge = refs/heads/fix/fix-order-request-number-while-zero
+[branch "feature/32386-direct-sales-page"]
+	vscode-merge-base = origin/dev
+	remote = origin
+	merge = refs/heads/feature/32386-direct-sales-page
+[branch "feature/send-order-to-primavera-in-delivering-state"]
+	vscode-merge-base = origin/dev
+	remote = origin
+	merge = refs/heads/feature/send-order-to-primavera-in-delivering-state
+[branch "feature/release-24-04-2023"]
+	vscode-merge-base = origin/dev
+	remote = origin
+	merge = refs/heads/feature/release-24-04-2023
+[branch "feature/change-invoice-pdf"]
+	vscode-merge-base = origin/dev
+	remote = origin
+	merge = refs/heads/feature/change-invoice-pdf
+[branch "bug-fix-batch-bug-on-draft-orders"]
+	vscode-merge-base = origin/dev
+	remote = origin
+	merge = refs/heads/bug-fix-batch-bug-on-draft-orders
+[branch "bug-fix-on-importing-client-contacts"]
+	vscode-merge-base = origin/bug-fix-batch-bug-on-draft-orders
+	remote = origin
+	merge = refs/heads/bug-fix-on-importing-client-contacts
+[branch "feature/change-shipper-role"]
+	vscode-merge-base = origin/dev
+	remote = origin
+	merge = refs/heads/feature/change-shipper-role
+[branch "fix-change-price-when-duplicated-product-on-cart"]
+	vscode-merge-base = origin/bug-fix-on-importing-client-contacts
+	remote = origin
+	merge = refs/heads/fix-change-price-when-duplicated-product-on-cart
+[branch "feature/import-invoice-pending-value"]
+	vscode-merge-base = origin/dev
+	remote = origin
+	merge = refs/heads/feature/import-invoice-pending-value
+[branch "feature/magange-invoice-debt-in-front-end"]
+	vscode-merge-base = origin/feature/import-invoice-pending-value
+	remote = origin
+	merge = refs/heads/feature/magange-invoice-debt-in-front-end

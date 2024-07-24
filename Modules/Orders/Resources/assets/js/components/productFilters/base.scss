@@ -1,0 +1,204 @@
+// @media screen and (max-width: 1199px) {
+// /* RADIO GROUP DA MODAL */
+// .radio-group--no-break .ant-typography { word-break: keep-all; }
+
+// /* MENU DE NAVEGAÇÃO */
+// .frutaria-navigation-menu {
+//   height: 100%;
+//   min-height: 100vh;
+//   position: fixed !important;
+//   top: 0;
+//   left: 0;
+
+//   .ant-layout-sider-children { overflow: auto; }
+
+//   .ant-layout-sider-zero-width-trigger {
+//     position: absolute;
+//     top: 60px;
+//     right: -40px;
+//     border: 1px solid #d9d9d9 !important;
+//     border-left: none !important;
+//   }
+// }
+// }
+
+// /***
+// CABEÇALHO
+// ***/
+
+// .header-bar {
+//   height: auto;
+//   padding: 12px 50px;
+//   display: flex;
+//   gap: 20px;
+//   align-items: center;
+//   justify-content: space-between;
+//   box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.2);
+//   background-color: #FFF;
+//   z-index: 1;
+// }
+// .header-bar__options {
+//   height: auto;
+//   line-height: normal;
+//   display: flex;
+//   align-items: center;
+//   justify-content: flex-end;
+// }
+
+// @media screen and (max-width: 991px) {
+// .header-bar { padding: 12px 20px; }
+// .header-bar__options {
+//   width: 150px;
+//   padding-left: 95px;
+//   padding-bottom: 25px;
+//   position: relative;
+
+//   span { margin: 0 !important; }
+// }
+
+// .header-bar__profile {
+//   width: 150px;
+//   display: flex;
+//   justify-content: flex-end;
+//   align-items: center;
+//   position: absolute;
+//   right: 0;
+//   bottom: 0;
+// }
+// }
+
+/***
+CONTEUDO PRINCIPAL
+***/
+
+.order-list--type-2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* BARRA DE FILTROS */
+
+.order-list__filter {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFC53D;
+}
+
+@media screen and (max-width: 1280px) {
+  .order-list__filter { display: block; }
+}
+
+/* LISTA DE ENCOMENDAS */
+
+.order-list__content { width: 70%; }
+
+/* BOX DE RESUMO DA COMPRA */
+
+.order-list__purchase {
+  width: 30%;
+  height: calc(100vh - 64px);
+  padding: 24px 0 0;
+  position: relative;
+  background-color: #fff;
+  
+  .purchase__scroll {
+    height: 100%;
+    padding-bottom: 180px;
+    overflow: auto;
+    position: relative;
+    z-index: 2;
+  }
+}
+.purchase__open-button {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  color: rgba(0,0,0,.88);
+  font-size: 20px;
+  display: none;
+  position: absolute;
+  top: 110px;
+  left: -39px;
+  border-radius: 6px 0 0 6px;
+  border: 1px solid #d9d9d9;
+  border-right: none;
+  background-color: #fff;
+  z-index: 2;
+}
+.purchase__add-button {
+  font-weight: 600;
+  font-size: 20px;
+}
+.purchase__bottom {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  box-shadow: 0 -1px 10px #ddd;
+  background-color: #fff;
+  z-index: 4;
+}
+
+.purchase__top {
+  width: 100%;
+  padding: 16px 24px 0px 24px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: 0 -1px 10px #ddd;
+  background-color: #fff;
+  z-index: 4;
+}
+
+.scrollable-container--type-2 {
+  position: relative;
+
+  .purchase__top {
+    width: calc(100% + 3rem);
+    padding: 16px 24px 16px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: -10px 0px 10px #ddd;
+    transform: translate(-1.5rem, -1.5rem);
+    background-color: #fff;
+    z-index: 4;
+
+    .order-list__title {
+      margin: 0;
+      column-gap: 20px;
+    }
+  }
+
+  .purchase__content { margin-top: 0 !important; }
+}
+
+@media screen and (max-width: 1199px) {
+  .order-list__content { width: 100%; }
+  .order-list__purchase {
+    width: 100%;
+    max-width: 280px;
+    height: 100%;
+    max-height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translate(100%,0);
+    border-left: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    transition: transform 200ms ease-in-out;
+    z-index: 4;
+
+    &.active { transform: translate(0,0); }
+  }
+  .purchase__open-button { display: block; }
+  .purchase__add-button { font-size: 15px; }
+}
+
+.ant-input-number-lg input.ant-input-number-input { min-width: 38px !important; }

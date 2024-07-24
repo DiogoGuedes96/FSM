@@ -1,0 +1,78 @@
+@import '../../../../../resources/sass/app.scss';
+
+.container-spin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 1199px) {
+  /* RADIO GROUP DA MODAL */
+  .radio-group--no-break .ant-typography { word-break: keep-all; }
+
+  /* MENU DE NAVEGAÇÃO */
+  .frutaria-navigation-menu {
+    height: 100%;
+    min-height: 100vh;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+
+    .ant-layout-sider-children { overflow: auto; }
+
+    .ant-layout-sider-zero-width-trigger {
+      position: absolute;
+      top: 60px;
+      right: -40px;
+      border: 1px solid #d9d9d9 !important;
+      border-left: none !important;
+    }
+  }
+}
+
+/***
+CABEÇALHO
+***/
+
+.header-bar {
+  height: auto !important;
+  padding: 12px 50px !important;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.2);
+  background-color: #FFF !important;
+  z-index: 1;
+}
+.header-bar__options {
+  height: auto;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 991px) {
+  .header-bar { padding: 12px 20px !important; }
+  .header-bar__options {
+    width: 150px;
+    padding-left: 95px;
+    padding-bottom: 25px;
+    position: relative;
+
+    span { margin: 0 !important; }
+  }
+
+  .header-bar__profile {
+    width: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}

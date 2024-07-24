@@ -1,0 +1,13 @@
+{
+    "name": "Primavera",
+    "alias": "primavera",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Primavera\\Providers\\PrimaveraServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

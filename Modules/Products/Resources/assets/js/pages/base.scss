@@ -1,0 +1,50 @@
+/* BARRA DO TOPO */
+.products__bar {
+  margin: 16px;
+
+  .ant-space { flex-wrap: wrap; }
+}
+
+@media screen and (max-width: 479px) {
+  .products__bar {
+    .ant-pagination {
+      .ant-pagination-item { margin: 0; }
+    }
+  }
+
+  .products__element {
+    width: 100%;
+
+    .ant-space-item,
+    button,
+    input,
+    .ant-select { width: 100%; }
+  }
+}
+
+/* TABELA */
+
+.products__table {
+  .ant-table-content {
+    overflow-x: auto;
+
+    table {
+      width: 100%;
+      min-width: 1050px;
+    }
+  }
+}
+
+/* GAVETA */
+
+@media screen and (max-width: 640px) {
+  .ant-drawer-content-wrapper {
+    width: auto !important;
+    max-width: 90%;
+  }
+}
+
+.ant-table-wrapper .ant-table-pagination { flex-wrap: nowrap !important; }
+.ant-pagination {
+  li { margin: 0 !important; }
+}

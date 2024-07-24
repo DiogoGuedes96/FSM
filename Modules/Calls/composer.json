@@ -1,0 +1,27 @@
+{
+    "name": "nwidart/calls",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Calls\\": "",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "require": {
+        "dyegogssouza/pami": "^1.0"
+    }
+}

@@ -1,0 +1,7 @@
+.list-striped .ant-list-items li{
+    background-color: $white;
+}
+
+.list-striped .ant-list-items li:nth-of-type(odd){
+    background-color: $gray-3 !important;
+}

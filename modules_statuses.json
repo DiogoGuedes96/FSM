@@ -1,0 +1,9 @@
+{
+    "Products": true,
+    "Calls": true,
+    "Primavera": true,
+    "Orders": true,
+    "Clients": true,
+    "Schedule": true,
+    "Dashboard": true
+}

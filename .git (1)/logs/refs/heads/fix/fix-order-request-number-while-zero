@@ -1,0 +1,2 @@
+0000000000000000000000000000000000000000 6acf5d8b9842807b128a76a099e473ffcfc3365f Diogo Guedes <diogo.guedes@integer.pt> 1713272756 +0100	branch: Created from HEAD
+6acf5d8b9842807b128a76a099e473ffcfc3365f dcae984cf229752015c1ce785e6b3949d79f0ecb Diogo Guedes <diogo.guedes@integer.pt> 1713274101 +0100	commit: Hot fix order request number when zero and remove client info drawer on checkout page

@@ -1,0 +1,13 @@
+// Variables
+@import 'variables';
+
+// Global styles
+body {
+    margin: 0;
+    font-family: $font-family-sans-serif;
+}
+
+// Components
+@import './components/sider';
+@import './components/list';
+@import './components/login';

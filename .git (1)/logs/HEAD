@@ -1,0 +1,117 @@
+0600ed688cf01ce7dbd3297806f7e6bf1e68d0a6 0600ed688cf01ce7dbd3297806f7e6bf1e68d0a6 Diogo Guedes <diogo.guedes@integer.pt> 1710496694 +0000	checkout: moving from bug/31964-order-createdBy-preparedBy-info-add to fix/fixes-march-2024
+0600ed688cf01ce7dbd3297806f7e6bf1e68d0a6 0017395af3ce843272a689c098d63bd76e6c5fc8 Diogo Guedes <diogo.guedes@integer.pt> 1710496717 +0000	commit: Pending orders count
+0017395af3ce843272a689c098d63bd76e6c5fc8 c40e61901404fe4aa4c3a660156ead398723ecf3 Diogo Guedes <diogo.guedes@integer.pt> 1710925849 +0000	commit: 21-03-2024 delivery package
+c40e61901404fe4aa4c3a660156ead398723ecf3 c40e61901404fe4aa4c3a660156ead398723ecf3 Diogo Guedes <diogo.guedes@integer.pt> 1710927017 +0000	reset: moving to HEAD
+c40e61901404fe4aa4c3a660156ead398723ecf3 c40e61901404fe4aa4c3a660156ead398723ecf3 Diogo Guedes <diogo.guedes@integer.pt> 1710927081 +0000	reset: moving to HEAD
+c40e61901404fe4aa4c3a660156ead398723ecf3 707bde9eb36ef7264360cbabd11a50f4079fadc9 Diogo Guedes <diogo.guedes@integer.pt> 1710927090 +0000	checkout: moving from fix/fixes-march-2024 to dev
+707bde9eb36ef7264360cbabd11a50f4079fadc9 707bde9eb36ef7264360cbabd11a50f4079fadc9 Diogo Guedes <diogo.guedes@integer.pt> 1710927115 +0000	reset: moving to HEAD
+707bde9eb36ef7264360cbabd11a50f4079fadc9 4a1b1a21b6f8c8c63a87f0fdab9a1fbdaf5e4d2d Diogo Guedes <diogo.guedes@integer.pt> 1710927150 +0000	pull origin dev: Fast-forward
+4a1b1a21b6f8c8c63a87f0fdab9a1fbdaf5e4d2d c40e61901404fe4aa4c3a660156ead398723ecf3 Diogo Guedes <diogo.guedes@integer.pt> 1710927238 +0000	checkout: moving from dev to fix/fixes-march-2024
+c40e61901404fe4aa4c3a660156ead398723ecf3 16c24aea3b8467b70b36ec89f19439f3591a5d8a Diogo Guedes <diogo.guedes@integer.pt> 1710927929 +0000	commit (merge): 21-03-2024 delivery package
+16c24aea3b8467b70b36ec89f19439f3591a5d8a 2a9bd2d0b2790e09eaa14447014655720a56eaf5 Diogo Guedes <diogo.guedes@integer.pt> 1711017286 +0000	commit: 21-03-2024 delivery package v.2
+2a9bd2d0b2790e09eaa14447014655720a56eaf5 6047b8e4f8eff5137f6cde42e7de03ca08bafcad Diogo Guedes <diogo.guedes@integer.pt> 1711029737 +0000	commit: 21-03-2024 delivery package v.2.1
+6047b8e4f8eff5137f6cde42e7de03ca08bafcad bc9f4ddcfd00dbe2ca8339931466033e72245086 Diogo Guedes <diogo.guedes@integer.pt> 1711037785 +0000	commit: 21-03-2024 delivery package v.2.2
+bc9f4ddcfd00dbe2ca8339931466033e72245086 4a1b1a21b6f8c8c63a87f0fdab9a1fbdaf5e4d2d Diogo Guedes <diogo.guedes@integer.pt> 1711102745 +0000	checkout: moving from fix/fixes-march-2024 to dev
+4a1b1a21b6f8c8c63a87f0fdab9a1fbdaf5e4d2d 5888fcf96e5d9099f5adab00f63389d276b8d3cc Diogo Guedes <diogo.guedes@integer.pt> 1711102752 +0000	pull origin dev: Fast-forward
+5888fcf96e5d9099f5adab00f63389d276b8d3cc 5888fcf96e5d9099f5adab00f63389d276b8d3cc Diogo Guedes <diogo.guedes@integer.pt> 1711111732 +0000	checkout: moving from dev to fix/import-batches-fix
+5888fcf96e5d9099f5adab00f63389d276b8d3cc db95a4fd9ce7c61e1f6c003fa07aa3988ed14412 Diogo Guedes <diogo.guedes@integer.pt> 1711111743 +0000	commit: Fix importation of product Batches
+db95a4fd9ce7c61e1f6c003fa07aa3988ed14412 1e9766f0223f4f4315dc9edf629911c233f74dd8 Diogo Guedes <diogo.guedes@integer.pt> 1711111989 +0000	commit: Comments
+1e9766f0223f4f4315dc9edf629911c233f74dd8 cf86c844444f6bdc872130f59bbca4d688585ea9 Diogo Guedes <diogo.guedes@integer.pt> 1711117952 +0000	commit: Remove dd()
+cf86c844444f6bdc872130f59bbca4d688585ea9 cf86c844444f6bdc872130f59bbca4d688585ea9 Diogo Guedes <diogo.guedes@integer.pt> 1711552594 +0000	checkout: moving from fix/import-batches-fix to release-28-03-2024
+cf86c844444f6bdc872130f59bbca4d688585ea9 4de647e615c7f5c8e2873038fe897a0d53e7ba69 Diogo Guedes <diogo.guedes@integer.pt> 1711552720 +0000	commit: Fixes and improvements for 28/03/2024 release
+4de647e615c7f5c8e2873038fe897a0d53e7ba69 bc53a8b2f41d49a9ebc7b106fe72436577633134 Diogo Guedes <diogo.guedes@integer.pt> 1711552736 +0000	pull origin dev: Merge made by the 'ort' strategy.
+bc53a8b2f41d49a9ebc7b106fe72436577633134 427af76e3ba8d0e23658d8caf96a17e4d5ebfb2d Diogo Guedes <diogo.guedes@integer.pt> 1711558024 +0000	commit: Fixes and improvements for 28/03/2024 release
+427af76e3ba8d0e23658d8caf96a17e4d5ebfb2d b2b7242f8651c62f071b7d2be540132203587956 Diogo Guedes <diogo.guedes@integer.pt> 1711966209 +0100	commit: Fixes 28/03/2024 release
+b2b7242f8651c62f071b7d2be540132203587956 5b3dee543053f00351b659c525754c9433c476eb Diogo Guedes <diogo.guedes@integer.pt> 1711975167 +0100	checkout: moving from release-28-03-2024 to release-04-04-2024
+5b3dee543053f00351b659c525754c9433c476eb 9e24dd13c1ae7cb6d4f52b95cc8e5ccfb0e09db4 Diogo Guedes <diogo.guedes@integer.pt> 1711975173 +0100	pull origin dev: Merge made by the 'ort' strategy.
+9e24dd13c1ae7cb6d4f52b95cc8e5ccfb0e09db4 63edea1b81b2e2ce87bbeda5cde1a7619f4b2a58 Diogo Guedes <diogo.guedes@integer.pt> 1712142368 +0100	pull origin feature/4-2-update-drawers-last-shops-table: Merge made by the 'ort' strategy.
+63edea1b81b2e2ce87bbeda5cde1a7619f4b2a58 4607c34f9bc1923fbfa34abc5b9e3c54984fd77a Diogo Guedes <diogo.guedes@integer.pt> 1712158019 +0100	commit: Fixes and improvements for release 04-04-2024
+4607c34f9bc1923fbfa34abc5b9e3c54984fd77a 6a61e34c1aa5862d39b0130cb6a53a22e75aebb2 Diogo Guedes <diogo.guedes@integer.pt> 1712239794 +0100	commit: Fixes and improvements for release 04-04-2024
+6a61e34c1aa5862d39b0130cb6a53a22e75aebb2 2fdf6162832a9ae6499436255513772663399ed8 Diogo Guedes <diogo.guedes@integer.pt> 1712325442 +0100	commit: Fixes and improvements for release 04-04-2024
+2fdf6162832a9ae6499436255513772663399ed8 5888fcf96e5d9099f5adab00f63389d276b8d3cc Diogo Guedes <diogo.guedes@integer.pt> 1712582794 +0100	checkout: moving from release-04-04-2024 to dev
+5888fcf96e5d9099f5adab00f63389d276b8d3cc 7a7b3ff656446e1c5d86503815e1c21248e9fbbe Diogo Guedes <diogo.guedes@integer.pt> 1712582801 +0100	pull origin dev: Fast-forward
+7a7b3ff656446e1c5d86503815e1c21248e9fbbe 7a7b3ff656446e1c5d86503815e1c21248e9fbbe Diogo Guedes <diogo.guedes@integer.pt> 1712671843 +0100	checkout: moving from dev to feature/finish-client-client-bar-products-filters
+7a7b3ff656446e1c5d86503815e1c21248e9fbbe 2a73499a7fce56c4317ba8177bc82b48eff7e51a Diogo Guedes <diogo.guedes@integer.pt> 1712671871 +0100	commit: Finish client bar products filters
+2a73499a7fce56c4317ba8177bc82b48eff7e51a 7a7b3ff656446e1c5d86503815e1c21248e9fbbe Diogo Guedes <diogo.guedes@integer.pt> 1712757662 +0100	checkout: moving from feature/finish-client-client-bar-products-filters to dev
+7a7b3ff656446e1c5d86503815e1c21248e9fbbe 742297402c80ebddcf7646a76d51e7b3de4b7276 Diogo Guedes <diogo.guedes@integer.pt> 1712757669 +0100	checkout: moving from dev to test
+742297402c80ebddcf7646a76d51e7b3de4b7276 475aad7be0913314cefefe529938f0c6c65614f5 Diogo Guedes <diogo.guedes@integer.pt> 1712757675 +0100	pull origin test: Fast-forward
+475aad7be0913314cefefe529938f0c6c65614f5 7a7b3ff656446e1c5d86503815e1c21248e9fbbe Diogo Guedes <diogo.guedes@integer.pt> 1712757749 +0100	checkout: moving from test to dev
+7a7b3ff656446e1c5d86503815e1c21248e9fbbe 5bd8e99041c994e7ce2235449d5f03e247943503 Diogo Guedes <diogo.guedes@integer.pt> 1712757754 +0100	pull origin dev: Fast-forward
+5bd8e99041c994e7ce2235449d5f03e247943503 2a73499a7fce56c4317ba8177bc82b48eff7e51a Diogo Guedes <diogo.guedes@integer.pt> 1712757797 +0100	checkout: moving from dev to feature/finish-client-client-bar-products-filters
+2a73499a7fce56c4317ba8177bc82b48eff7e51a 900e6d0f252d8c64e5241ddc018b64e8ab6a1c32 Diogo Guedes <diogo.guedes@integer.pt> 1712758926 +0100	commit: Fix in last sale filters
+900e6d0f252d8c64e5241ddc018b64e8ab6a1c32 1f2b95d0632e6903aaecec71e8b912b27a9f1ee3 Diogo Guedes <diogo.guedes@integer.pt> 1712763726 +0100	commit: Fix call center
+1f2b95d0632e6903aaecec71e8b912b27a9f1ee3 4b938e0f335111171821f1f9471723b8d3e15785 Diogo Guedes <diogo.guedes@integer.pt> 1712852416 +0100	commit: Fix conversion in client bar
+4b938e0f335111171821f1f9471723b8d3e15785 5bd8e99041c994e7ce2235449d5f03e247943503 Diogo Guedes <diogo.guedes@integer.pt> 1712911445 +0100	checkout: moving from feature/finish-client-client-bar-products-filters to dev
+5bd8e99041c994e7ce2235449d5f03e247943503 17562e9d0b5a6b75d04489922ce7055848ef5ba7 Diogo Guedes <diogo.guedes@integer.pt> 1712911455 +0100	pull origin dev: Fast-forward
+17562e9d0b5a6b75d04489922ce7055848ef5ba7 17562e9d0b5a6b75d04489922ce7055848ef5ba7 Diogo Guedes <diogo.guedes@integer.pt> 1713264034 +0100	checkout: moving from dev to feature-import-clients-contacts-from-primavera-crm
+17562e9d0b5a6b75d04489922ce7055848ef5ba7 5f0d935dd127ccda7247872cff461973c7f5be7b Diogo Guedes <diogo.guedes@integer.pt> 1713264056 +0100	commit: Create database structure
+5f0d935dd127ccda7247872cff461973c7f5be7b 475aad7be0913314cefefe529938f0c6c65614f5 Diogo Guedes <diogo.guedes@integer.pt> 1713264065 +0100	checkout: moving from feature-import-clients-contacts-from-primavera-crm to test
+475aad7be0913314cefefe529938f0c6c65614f5 17562e9d0b5a6b75d04489922ce7055848ef5ba7 Diogo Guedes <diogo.guedes@integer.pt> 1713264068 +0100	checkout: moving from test to dev
+17562e9d0b5a6b75d04489922ce7055848ef5ba7 6acf5d8b9842807b128a76a099e473ffcfc3365f Diogo Guedes <diogo.guedes@integer.pt> 1713272660 +0100	commit: Hot fix order request number when zero and remove client info drawer on checkout page
+6acf5d8b9842807b128a76a099e473ffcfc3365f 6acf5d8b9842807b128a76a099e473ffcfc3365f Diogo Guedes <diogo.guedes@integer.pt> 1713272756 +0100	checkout: moving from dev to fix/fix-order-request-number-while-zero
+6acf5d8b9842807b128a76a099e473ffcfc3365f 5f0d935dd127ccda7247872cff461973c7f5be7b Diogo Guedes <diogo.guedes@integer.pt> 1713272972 +0100	checkout: moving from fix/fix-order-request-number-while-zero to feature-import-clients-contacts-from-primavera-crm
+5f0d935dd127ccda7247872cff461973c7f5be7b 6acf5d8b9842807b128a76a099e473ffcfc3365f Diogo Guedes <diogo.guedes@integer.pt> 1713273328 +0100	checkout: moving from feature-import-clients-contacts-from-primavera-crm to fix/fix-order-request-number-while-zero
+6acf5d8b9842807b128a76a099e473ffcfc3365f dcae984cf229752015c1ce785e6b3949d79f0ecb Diogo Guedes <diogo.guedes@integer.pt> 1713274101 +0100	commit: Hot fix order request number when zero and remove client info drawer on checkout page
+dcae984cf229752015c1ce785e6b3949d79f0ecb 5f0d935dd127ccda7247872cff461973c7f5be7b Diogo Guedes <diogo.guedes@integer.pt> 1713276974 +0100	checkout: moving from fix/fix-order-request-number-while-zero to feature-import-clients-contacts-from-primavera-crm
+5f0d935dd127ccda7247872cff461973c7f5be7b bbb8fef657e681885b2ad09dbb1db50b7c1f3ed2 Diogo Guedes <diogo.guedes@integer.pt> 1713431931 +0100	commit: Import contacts from Primavera client CRM and modify call center and addresses
+bbb8fef657e681885b2ad09dbb1db50b7c1f3ed2 6acf5d8b9842807b128a76a099e473ffcfc3365f Diogo Guedes <diogo.guedes@integer.pt> 1713448368 +0100	checkout: moving from feature-import-clients-contacts-from-primavera-crm to dev
+6acf5d8b9842807b128a76a099e473ffcfc3365f 6acf5d8b9842807b128a76a099e473ffcfc3365f Diogo Guedes <diogo.guedes@integer.pt> 1713773006 +0100	checkout: moving from dev to feature/direct-sale-page
+6acf5d8b9842807b128a76a099e473ffcfc3365f 0000000000000000000000000000000000000000 Diogo Guedes <diogo.guedes@integer.pt> 1713773307 +0100	Branch: renamed refs/heads/feature/direct-sale-page to refs/heads/feature/32386-direct-sales-page
+0000000000000000000000000000000000000000 6acf5d8b9842807b128a76a099e473ffcfc3365f Diogo Guedes <diogo.guedes@integer.pt> 1713773307 +0100	Branch: renamed refs/heads/feature/direct-sale-page to refs/heads/feature/32386-direct-sales-page
+6acf5d8b9842807b128a76a099e473ffcfc3365f 25eb4cf03c0f2fe80b1b34989268a458b72d80be Diogo Guedes <diogo.guedes@integer.pt> 1713773370 +0100	commit: #32386 #34174 Create order direct sales page
+25eb4cf03c0f2fe80b1b34989268a458b72d80be 6acf5d8b9842807b128a76a099e473ffcfc3365f Diogo Guedes <diogo.guedes@integer.pt> 1713773527 +0100	checkout: moving from feature/32386-direct-sales-page to dev
+6acf5d8b9842807b128a76a099e473ffcfc3365f bbb8fef657e681885b2ad09dbb1db50b7c1f3ed2 Diogo Guedes <diogo.guedes@integer.pt> 1713773971 +0100	checkout: moving from dev to feature-import-clients-contacts-from-primavera-crm
+bbb8fef657e681885b2ad09dbb1db50b7c1f3ed2 00ed546d53b576a757279a7f58ca7cea126d2403 Diogo Guedes <diogo.guedes@integer.pt> 1713776946 +0100	commit: Change customer MoradasAlternativas index key
+00ed546d53b576a757279a7f58ca7cea126d2403 6acf5d8b9842807b128a76a099e473ffcfc3365f Diogo Guedes <diogo.guedes@integer.pt> 1713777037 +0100	checkout: moving from feature-import-clients-contacts-from-primavera-crm to dev
+6acf5d8b9842807b128a76a099e473ffcfc3365f 6acf5d8b9842807b128a76a099e473ffcfc3365f Diogo Guedes <diogo.guedes@integer.pt> 1713798265 +0100	checkout: moving from dev to feature/send-order-to-primavera-in-delivering-state
+6acf5d8b9842807b128a76a099e473ffcfc3365f c4225a9d18568450a2a20235d98e3f488cb50808 Diogo Guedes <diogo.guedes@integer.pt> 1713798367 +0100	commit: Sent order to primavera when delivering state and no EC generated
+c4225a9d18568450a2a20235d98e3f488cb50808 6acf5d8b9842807b128a76a099e473ffcfc3365f Diogo Guedes <diogo.guedes@integer.pt> 1713798416 +0100	checkout: moving from feature/send-order-to-primavera-in-delivering-state to dev
+6acf5d8b9842807b128a76a099e473ffcfc3365f 6acf5d8b9842807b128a76a099e473ffcfc3365f Diogo Guedes <diogo.guedes@integer.pt> 1713886361 +0100	checkout: moving from dev to dev
+6acf5d8b9842807b128a76a099e473ffcfc3365f 6acf5d8b9842807b128a76a099e473ffcfc3365f Diogo Guedes <diogo.guedes@integer.pt> 1713886384 +0100	checkout: moving from dev to feature/release-24-04-2023
+6acf5d8b9842807b128a76a099e473ffcfc3365f 789d5e2a8421ab58e44129f477d2dc49150f5dc3 Diogo Guedes <diogo.guedes@integer.pt> 1713886411 +0100	commit: Bug fixes release 24-04-2023
+789d5e2a8421ab58e44129f477d2dc49150f5dc3 5aa7a378e12427fa2fa377d2e4a9a01ea60d9cac Diogo Guedes <diogo.guedes@integer.pt> 1713961039 +0100	pull origin dev: Fast-forward
+5aa7a378e12427fa2fa377d2e4a9a01ea60d9cac c4225a9d18568450a2a20235d98e3f488cb50808 Diogo Guedes <diogo.guedes@integer.pt> 1713961102 +0100	checkout: moving from feature/release-24-04-2023 to feature/send-order-to-primavera-in-delivering-state
+c4225a9d18568450a2a20235d98e3f488cb50808 deaf4474ea7d3ab62a05380abd2a8136107bce71 Diogo Guedes <diogo.guedes@integer.pt> 1713961183 +0100	commit (merge): Merge branch 'dev' of ssh.dev.azure.com:v3/integer-consulting/Frutaria_Sao_Miguel/Frutaria_Sao_Miguel into feature/send-order-to-primavera-in-delivering-state
+deaf4474ea7d3ab62a05380abd2a8136107bce71 cf1fe47f0008f772739559e627953930d4b02535 Diogo Guedes <diogo.guedes@integer.pt> 1713974165 +0100	commit: Fix delivery date in the past
+cf1fe47f0008f772739559e627953930d4b02535 25eb4cf03c0f2fe80b1b34989268a458b72d80be Diogo Guedes <diogo.guedes@integer.pt> 1714987636 +0100	checkout: moving from feature/send-order-to-primavera-in-delivering-state to feature/32386-direct-sales-page
+25eb4cf03c0f2fe80b1b34989268a458b72d80be 4cdbd3d6b169b0e3ce3dd4638317eaedacf59b64 Diogo Guedes <diogo.guedes@integer.pt> 1715003844 +0100	pull origin dev: Merge made by the 'ort' strategy.
+4cdbd3d6b169b0e3ce3dd4638317eaedacf59b64 2bc080f7237e1ea5ada20102e1cb3d24c40ebdd4 Diogo Guedes <diogo.guedes@integer.pt> 1715617392 +0100	commit: #32386 #34398 34400 #34402 #34405 Add direct sale flux without editing order
+2bc080f7237e1ea5ada20102e1cb3d24c40ebdd4 c74461be03ebbeb25a72b2d336cfd5bc121f397e Diogo Guedes <diogo.guedes@integer.pt> 1715676881 +0100	commit: #32386 #34398 34400 #34402 #34405 Edit order flux in direct sale and fixe bugs
+c74461be03ebbeb25a72b2d336cfd5bc121f397e a8320760e1fe0e4db76c1f11a1644e711552e490 Diogo Guedes <diogo.guedes@integer.pt> 1715679718 +0100	commit: Add direct sale permission on permission seeder
+a8320760e1fe0e4db76c1f11a1644e711552e490 c464eb08ba4f80b2afd8f288252c65be8e5bcd2b Diogo Guedes <diogo.guedes@integer.pt> 1715689602 +0100	pull origin dev: Fast-forward
+c464eb08ba4f80b2afd8f288252c65be8e5bcd2b c87f7d06848f35465e56ca87a990160b17c0aaed Diogo Guedes <diogo.guedes@integer.pt> 1715849135 +0100	commit: Enable, send order to primavera on direct sale and bug fixes
+c87f7d06848f35465e56ca87a990160b17c0aaed 34debed479e70fd95cd1b69a352e8263f7ce36f7 Diogo Guedes <diogo.guedes@integer.pt> 1715863051 +0100	commit: Bug fixes
+34debed479e70fd95cd1b69a352e8263f7ce36f7 6acf5d8b9842807b128a76a099e473ffcfc3365f Diogo Guedes <diogo.guedes@integer.pt> 1715936615 +0100	checkout: moving from feature/32386-direct-sales-page to dev
+6acf5d8b9842807b128a76a099e473ffcfc3365f e67affab3c20f5fd02c54db03266f39646e6f776 Diogo Guedes <diogo.guedes@integer.pt> 1715936627 +0100	pull origin dev: Fast-forward
+e67affab3c20f5fd02c54db03266f39646e6f776 e67affab3c20f5fd02c54db03266f39646e6f776 Diogo Guedes <diogo.guedes@integer.pt> 1716219122 +0100	checkout: moving from dev to feature/change-invoice-pdf
+e67affab3c20f5fd02c54db03266f39646e6f776 39e4b1740d6ff0a564391a0004d61d88bc93d93d Diogo Guedes <diogo.guedes@integer.pt> 1716219191 +0100	commit: Change invoice PDF and direct sale order notes fix
+39e4b1740d6ff0a564391a0004d61d88bc93d93d 31c44336ed543ce2b8dc419cb3ff69480f333d4b Diogo Guedes <diogo.guedes@integer.pt> 1716219275 +0100	commit: Change invoice PDF and direct sale order notes fix
+31c44336ed543ce2b8dc419cb3ff69480f333d4b 1e89abe68c471cc91bee1f98bc342f44c3725ebc Diogo Guedes <diogo.guedes@integer.pt> 1716219499 +0100	commit (merge): Change invoice PDF and direct sale order notes fix
+1e89abe68c471cc91bee1f98bc342f44c3725ebc e67affab3c20f5fd02c54db03266f39646e6f776 Diogo Guedes <diogo.guedes@integer.pt> 1716451524 +0100	checkout: moving from feature/change-invoice-pdf to dev
+e67affab3c20f5fd02c54db03266f39646e6f776 43dc3396ebcebcbd21bc5b09e8e3855093722438 Diogo Guedes <diogo.guedes@integer.pt> 1716451532 +0100	pull origin dev: Fast-forward
+43dc3396ebcebcbd21bc5b09e8e3855093722438 c275d82fd959c42a14d0f1bec3c09ccf154a962c Diogo Guedes <diogo.guedes@integer.pt> 1716454735 +0100	pull origin dev: Fast-forward
+c275d82fd959c42a14d0f1bec3c09ccf154a962c c275d82fd959c42a14d0f1bec3c09ccf154a962c Diogo Guedes <diogo.guedes@integer.pt> 1716454972 +0100	checkout: moving from dev to bug-fix-batch-bug-on-draft-orders
+c275d82fd959c42a14d0f1bec3c09ccf154a962c 689f9f04713bd9f9629895e8d16d37cc466ab6f4 Diogo Guedes <diogo.guedes@integer.pt> 1716455008 +0100	commit: Fix batch bug on draft orders
+689f9f04713bd9f9629895e8d16d37cc466ab6f4 70b4bdf4293d99d9b30f06b92e76ff00bf5655e5 Diogo Guedes <diogo.guedes@integer.pt> 1716455517 +0100	commit: Fix batch bug on draft orders
+70b4bdf4293d99d9b30f06b92e76ff00bf5655e5 120342efaaac9f9e739a7e0d8690fa7e5d518647 Diogo Guedes <diogo.guedes@integer.pt> 1717158052 +0100	commit: Request number optional
+120342efaaac9f9e739a7e0d8690fa7e5d518647 702c44d374d911bdff6351d0ab77ad5745944a1b Diogo Guedes <diogo.guedes@integer.pt> 1717158063 +0100	commit: Request number optional
+702c44d374d911bdff6351d0ab77ad5745944a1b 68082f8d3276e81c750c525a7a059c717bf1abc3 Diogo Guedes <diogo.guedes@integer.pt> 1717158270 +0100	commit: Request number optional
+68082f8d3276e81c750c525a7a059c717bf1abc3 68082f8d3276e81c750c525a7a059c717bf1abc3 Diogo Guedes <diogo.guedes@integer.pt> 1717158348 +0100	checkout: moving from bug-fix-batch-bug-on-draft-orders to bug-fix-on-importing-client-contacts
+68082f8d3276e81c750c525a7a059c717bf1abc3 4eef49f46b7cafa0ca2379a425089154a5118ae8 Diogo Guedes <diogo.guedes@integer.pt> 1717158372 +0100	commit: Avoid using array withou duplicates
+4eef49f46b7cafa0ca2379a425089154a5118ae8 c275d82fd959c42a14d0f1bec3c09ccf154a962c Diogo Guedes <diogo.guedes@integer.pt> 1717511934 +0100	checkout: moving from bug-fix-on-importing-client-contacts to dev
+c275d82fd959c42a14d0f1bec3c09ccf154a962c 877a40666fa0e015878b810475e4b7e50d6b753b Diogo Guedes <diogo.guedes@integer.pt> 1717511942 +0100	pull origin dev: Fast-forward
+877a40666fa0e015878b810475e4b7e50d6b753b 877a40666fa0e015878b810475e4b7e50d6b753b Diogo Guedes <diogo.guedes@integer.pt> 1717514828 +0100	checkout: moving from dev to feature/change-shipper-role
+877a40666fa0e015878b810475e4b7e50d6b753b a64744222863af1d6ac9e9f78229c3fdf4dbbb1b Diogo Guedes <diogo.guedes@integer.pt> 1717514847 +0100	commit: Seeder change shipper role to direct sale
+a64744222863af1d6ac9e9f78229c3fdf4dbbb1b 2e3681d751637445b130569769bea5940bedd9e8 Diogo Guedes <diogo.guedes@integer.pt> 1717577406 +0100	commit: Change Shipper role to direct sale
+2e3681d751637445b130569769bea5940bedd9e8 4eef49f46b7cafa0ca2379a425089154a5118ae8 Diogo Guedes <diogo.guedes@integer.pt> 1718700007 +0100	checkout: moving from feature/change-shipper-role to bug-fix-on-importing-client-contacts
+4eef49f46b7cafa0ca2379a425089154a5118ae8 4eef49f46b7cafa0ca2379a425089154a5118ae8 Diogo Guedes <diogo.guedes@integer.pt> 1718725239 +0100	checkout: moving from bug-fix-on-importing-client-contacts to fix-change-price-when-duplicated-product-on-cart
+4eef49f46b7cafa0ca2379a425089154a5118ae8 282765f69d75537ac6d3880d4afec9e0b3ec6d89 Diogo Guedes <diogo.guedes@integer.pt> 1718725384 +0100	commit: Cart price fix and fix when dubplicated products are on cart
+282765f69d75537ac6d3880d4afec9e0b3ec6d89 d8cb980ef9a5547404a57e19347292c0a0b408c0 Diogo Guedes <diogo.guedes@integer.pt> 1718725405 +0100	pull origin dev: Merge made by the 'ort' strategy.
+d8cb980ef9a5547404a57e19347292c0a0b408c0 877a40666fa0e015878b810475e4b7e50d6b753b Diogo Guedes <diogo.guedes@integer.pt> 1718893952 +0100	checkout: moving from fix-change-price-when-duplicated-product-on-cart to dev
+877a40666fa0e015878b810475e4b7e50d6b753b ff32486df39cee0ad8d3422c7426051027a3f0d2 Diogo Guedes <diogo.guedes@integer.pt> 1718893960 +0100	pull origin dev: Fast-forward
+ff32486df39cee0ad8d3422c7426051027a3f0d2 ff32486df39cee0ad8d3422c7426051027a3f0d2 Diogo Guedes <diogo.guedes@integer.pt> 1719405373 +0100	checkout: moving from dev to feature/import-invoice-pending-value
+ff32486df39cee0ad8d3422c7426051027a3f0d2 e0811e1cae72c38b13ee8cdf34c70fa48ad9dd85 Diogo Guedes <diogo.guedes@integer.pt> 1719405960 +0100	commit: Import invoces pending values and bug fixes
+e0811e1cae72c38b13ee8cdf34c70fa48ad9dd85 e0811e1cae72c38b13ee8cdf34c70fa48ad9dd85 Diogo Guedes <diogo.guedes@integer.pt> 1721121542 +0100	checkout: moving from feature/import-invoice-pending-value to feature/magange-invoice-debt-in-front-end
+e0811e1cae72c38b13ee8cdf34c70fa48ad9dd85 55724fd5c2127936a1efe864826901ddbe517a4a Diogo Guedes <diogo.guedes@integer.pt> 1721121559 +0100	commit: Manage invoice debt in frontEnd
+55724fd5c2127936a1efe864826901ddbe517a4a ff32486df39cee0ad8d3422c7426051027a3f0d2 Diogo Guedes <diogo.guedes@integer.pt> 1721327241 +0100	checkout: moving from feature/magange-invoice-debt-in-front-end to dev
+ff32486df39cee0ad8d3422c7426051027a3f0d2 7d0c9d00ea6010f96e13f6e6a19cf026a8a26a51 Diogo Guedes <diogo.guedes@integer.pt> 1721327250 +0100	pull origin dev: Fast-forward

@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 5888fcf96e5d9099f5adab00f63389d276b8d3cc Diogo Guedes <diogo.guedes@integer.pt> 1711111732 +0000	branch: Created from HEAD
+5888fcf96e5d9099f5adab00f63389d276b8d3cc db95a4fd9ce7c61e1f6c003fa07aa3988ed14412 Diogo Guedes <diogo.guedes@integer.pt> 1711111743 +0000	commit: Fix importation of product Batches
+db95a4fd9ce7c61e1f6c003fa07aa3988ed14412 1e9766f0223f4f4315dc9edf629911c233f74dd8 Diogo Guedes <diogo.guedes@integer.pt> 1711111989 +0000	commit: Comments
+1e9766f0223f4f4315dc9edf629911c233f74dd8 cf86c844444f6bdc872130f59bbca4d688585ea9 Diogo Guedes <diogo.guedes@integer.pt> 1711117952 +0000	commit: Remove dd()

@@ -1,0 +1,33 @@
+.dashboard__data-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 479px) {
+  .dashboard__card-1 {
+    padding-top: 17px;
+
+    .ant-tabs-nav {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+
+      .ant-tabs-nav-operations { display: none !important; }
+
+      .ant-tabs-nav-wrap {
+        &:before,
+        &:after { display: none !important; }
+
+        .ant-tabs-nav-list { transform: translate(0,0) !important; }
+      }
+    }
+
+    .dashboard__data-list {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 10px;
+    }
+    .ant-divider { display: none !important; }
+  }
+}

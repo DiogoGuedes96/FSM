@@ -1,0 +1,5 @@
+0000000000000000000000000000000000000000 cf86c844444f6bdc872130f59bbca4d688585ea9 Diogo Guedes <diogo.guedes@integer.pt> 1711552594 +0000	branch: Created from HEAD
+cf86c844444f6bdc872130f59bbca4d688585ea9 4de647e615c7f5c8e2873038fe897a0d53e7ba69 Diogo Guedes <diogo.guedes@integer.pt> 1711552720 +0000	commit: Fixes and improvements for 28/03/2024 release
+4de647e615c7f5c8e2873038fe897a0d53e7ba69 bc53a8b2f41d49a9ebc7b106fe72436577633134 Diogo Guedes <diogo.guedes@integer.pt> 1711552736 +0000	pull origin dev: Merge made by the 'ort' strategy.
+bc53a8b2f41d49a9ebc7b106fe72436577633134 427af76e3ba8d0e23658d8caf96a17e4d5ebfb2d Diogo Guedes <diogo.guedes@integer.pt> 1711558024 +0000	commit: Fixes and improvements for 28/03/2024 release
+427af76e3ba8d0e23658d8caf96a17e4d5ebfb2d b2b7242f8651c62f071b7d2be540132203587956 Diogo Guedes <diogo.guedes@integer.pt> 1711966209 +0100	commit: Fixes 28/03/2024 release
