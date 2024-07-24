@@ -1,0 +1,602 @@
+{
+	"info": {
+		"_postman_id": "54a432e6-2c86-4051-bb3c-3c3f4ecfa179",
+		"name": "INT_Integer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27456275",
+		"_collection_link": "https://gold-equinox-267127.postman.co/workspace/Integer~64bdbe5d-42de-4b3d-a542-c1ba2cb19b65/collection/27456275-54a432e6-2c86-4051-bb3c-3c3f4ecfa179?action=share&source=collection_link&creator=27456275"
+	},
+	"item": [
+		{
+			"name": "Token Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = JSON.parse(responseBody)",
+							"pm.environment.set(\"secondToken\", data.access_token);",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{secondToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "{{company}}",
+							"type": "text"
+						},
+						{
+							"key": "instance",
+							"value": "{{instance}}",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "{{grandType}}",
+							"type": "text"
+						},
+						{
+							"key": "line",
+							"value": "{{line}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{apiUrl}}token",
+					"host": [
+						"{{apiUrl}}token"
+					]
+				},
+				"description": "In this token is necessary to pass the username, password and company, to have full access to Api capability"
+			},
+			"response": [
+				{
+					"name": "Second Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "text"
+								},
+								{
+									"key": "company",
+									"value": "{{company}}",
+									"type": "text"
+								},
+								{
+									"key": "instance",
+									"value": "{{instance}}",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "{{grandType}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}token",
+							"host": [
+								"{{apiUrl}}token"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "*",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "379",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 Sep 2018 11:21:09 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "-1",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"access_token\":\"UB2_ffiXrE22mWGEAM5azRs5ca0pKH0B8-veDaMzy4UA6CcsPTSqAvdKnS4DQQEKQZtQCijPhgiZqG2iz2bf2izjha7T1Zsn-rhyzXl4E_I-_S0A3BUn8K-yB-urgl1nDybTmt7SxF4hE0YoT-NtyTn5sozVaJjGSG0gHBgarDaycg2hkPrn6tpxZ1ODBlfpOG_K55YBuu04vlheEqarqX6vq2wibYN8nUpo4DiRlxkled86JNWK6fssCxPmD2MeY8XiCe2ARxbG6qyHdpTP4YDtvYbObN54KKGn-MCSU60gOGS86rNuJbc2AshO-E2k\",\"token_type\":\"bearer\",\"expires_in\":1199}"
+				}
+			]
+		},
+		{
+			"name": "Get Product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{secondToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ID\" : \"A0001\",\r\n    \"CodBarras\" : \"\"\r\n}"
+				},
+				"url": {
+					"raw": "{{apiUrl}}ApiExtended/Produtos",
+					"host": [
+						"{{apiUrl}}ApiExtended"
+					],
+					"path": [
+						"Produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Products List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{secondToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{apiUrl}}ApiExtended/LstProdutos",
+					"host": [
+						"{{apiUrl}}ApiExtended"
+					],
+					"path": [
+						"LstProdutos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Products Stock List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{secondToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{apiUrl}}ApiExtended/LstProdutosStock",
+					"host": [
+						"{{apiUrl}}ApiExtended"
+					],
+					"path": [
+						"LstProdutosStock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tipos de documentos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{secondToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{apiUrl}}ApiExtended/TiposDocumentos",
+					"host": [
+						"{{apiUrl}}ApiExtended"
+					],
+					"path": [
+						"TiposDocumentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{secondToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ID\" : \"2110124\",\r\n    \"Telefone\" : \"\",\r\n    \"Contribuinte\" : \"\",\r\n    \"Email\" : \"\",\r\n}"
+				},
+				"url": {
+					"raw": "{{apiUrl}}ApiExtended/Clientes",
+					"host": [
+						"{{apiUrl}}ApiExtended"
+					],
+					"path": [
+						"Clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customer List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{secondToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ID\" : \"SOFRIO\",\r\n    \"Telefone\" : \"\",\r\n    \"Contribuinte\" : \"\",\r\n    \"Email\" : \"\"\r\n}"
+				},
+				"url": {
+					"raw": "{{apiUrl}}ApiExtended/LstClientes",
+					"host": [
+						"{{apiUrl}}ApiExtended"
+					],
+					"path": [
+						"LstClientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Documents",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{secondToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ID\" : \"SOFRIO\",\r\n    \"Telefone\" : \"\",\r\n    \"Contribuinte\" : \"\",\r\n    \"Email\" : \"\",\r\n    \"DataInicial\" : \"2020-01-01\",\r\n    \"DataFinal\" : \"2022-12-31\"\r\n}"
+				},
+				"url": {
+					"raw": "{{apiUrl}}ApiExtended/Documentos",
+					"host": [
+						"{{apiUrl}}ApiExtended"
+					],
+					"path": [
+						"Documentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Documents List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{secondToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ID\" : \"SOFRIO\",\r\n    \"Telefone\" : \"\",\r\n    \"Contribuinte\" : \"\",\r\n    \"Email\" : \"\"\r\n}"
+				},
+				"url": {
+					"raw": "{{apiUrl}}ApiExtended/LstDocumentos",
+					"host": [
+						"{{apiUrl}}ApiExtended"
+					],
+					"path": [
+						"LstDocumentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get API Context",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{secondToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{apiUrl}}ApiExtended/ContextoAplicacao",
+					"host": [
+						"{{apiUrl}}ApiExtended"
+					],
+					"path": [
+						"ContextoAplicacao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Version",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{secondToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{apiUrl}}ApiExtended/Versao",
+					"host": [
+						"{{apiUrl}}ApiExtended"
+					],
+					"path": [
+						"Versao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cria Encomenda",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{secondToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Entidade\": \"2111024\",\r\n    \"Nome\": \"Cantaro Mágico, Lda\",\r\n    \"NumPedido\": \"3\",\r\n    \"NumRequisicao\": \"1234-5\",\r\n    \"Referencia\": \"1234-5\",\r\n    \"Data\": \"2023-12-14 17:01:15\",\r\n    \"DataEntrega\": \"2023-12-14\",\r\n    \"MoradaEntrega\": \"001\",\r\n    \"Contacto\": \"911911547\",\r\n    \"Observacoes\": \"Emitir FA ATENÇÃO MORADA DA LAGOA TEM QUE SAIR CORRETA 4 Lojas A Mesma pessoa da a encomenda p todas as lojas! Cal. peq Desc prom na cebola!\",\r\n    \"Linhas\": [\r\n        {\r\n            \"Artigo\": \"010115\",\r\n            \"Descricao\": \"Clemenvilha Nacional c/Rama Extra Cat.II\",\r\n            \"Lote\": \"4923F2148841\",\r\n            \"Quantidade\": \"1\",\r\n            \"Volume\": \"1\",\r\n            \"Unidade\": \"KG\",\r\n            \"PrecoUnit\": 1.75,\r\n            \"CodIVA\": \"1\",\r\n            \"Desconto\": 5.0,\r\n            \"Total\": 1.66\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "{{apiUrl}}ApiExtended/Encomenda",
+					"host": [
+						"{{apiUrl}}ApiExtended"
+					],
+					"path": [
+						"Encomenda"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

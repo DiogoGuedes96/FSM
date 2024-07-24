@@ -1,0 +1,3462 @@
+{
+	"info": {
+		"_postman_id": "e8af1055-3936-44a8-98a5-63543e5dc225",
+		"name": "Primavera WebAPI Collections",
+		"description": "Primavera.WebAPI collection is for testing all the power and capability of the API developed at Primavera BSS.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27456275",
+		"_collection_link": "https://gold-equinox-267127.postman.co/workspace/Integer~64bdbe5d-42de-4b3d-a542-c1ba2cb19b65/collection/16580532-e8af1055-3936-44a8-98a5-63543e5dc225?action=share&source=collection_link&creator=27456275"
+	},
+	"item": [
+		{
+			"name": "Authorization",
+			"item": [
+				{
+					"name": "Token Request",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var data = JSON.parse(responseBody)",
+									"pm.environment.set(\"secondToken\", data.access_token);",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "text"
+								},
+								{
+									"key": "company",
+									"value": "{{company}}",
+									"type": "text"
+								},
+								{
+									"key": "instance",
+									"value": "{{instance}}",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "{{grandType}}",
+									"type": "text"
+								},
+								{
+									"key": "line",
+									"value": "{{line}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}token",
+							"host": [
+								"{{apiUrl}}token"
+							]
+						},
+						"description": "In this token is necessary to pass the username, password and company, to have full access to Api capability"
+					},
+					"response": [
+						{
+							"name": "Second Token",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "{{username}}",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "{{password}}",
+											"type": "text"
+										},
+										{
+											"key": "company",
+											"value": "{{company}}",
+											"type": "text"
+										},
+										{
+											"key": "instance",
+											"value": "{{instance}}",
+											"type": "text"
+										},
+										{
+											"key": "grant_type",
+											"value": "{{grandType}}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{apiUrl}}token",
+									"host": [
+										"{{apiUrl}}token"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*",
+									"name": "Access-Control-Allow-Headers",
+									"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*",
+									"name": "Access-Control-Allow-Methods",
+									"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"name": "Access-Control-Allow-Origin",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Content-Length",
+									"value": "379",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 14 Sep 2018 11:21:09 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Expires",
+									"value": "-1",
+									"name": "Expires",
+									"description": "Gives the date/time after which the response is considered stale"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0",
+									"name": "Server",
+									"description": "A name for the server"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET",
+									"name": "X-Powered-By",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								}
+							],
+							"cookie": [],
+							"body": "{\"access_token\":\"UB2_ffiXrE22mWGEAM5azRs5ca0pKH0B8-veDaMzy4UA6CcsPTSqAvdKnS4DQQEKQZtQCijPhgiZqG2iz2bf2izjha7T1Zsn-rhyzXl4E_I-_S0A3BUn8K-yB-urgl1nDybTmt7SxF4hE0YoT-NtyTn5sozVaJjGSG0gHBgarDaycg2hkPrn6tpxZ1ODBlfpOG_K55YBuu04vlheEqarqX6vq2wibYN8nUpo4DiRlxkled86JNWK6fssCxPmD2MeY8XiCe2ARxbG6qyHdpTP4YDtvYbObN54KKGn-MCSU60gOGS86rNuJbc2AshO-E2k\",\"token_type\":\"bearer\",\"expires_in\":1199}"
+						}
+					]
+				},
+				{
+					"name": "Token without company",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var data = JSON.parse(responseBody)",
+									"pm.environment.set(\"firstToken\", data.access_token);"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "text"
+								},
+								{
+									"key": "instance",
+									"value": "{{instance}}",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "{{grandType}}",
+									"type": "text"
+								},
+								{
+									"key": "company",
+									"value": "{{company}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}token",
+							"host": [
+								"{{apiUrl}}token"
+							]
+						},
+						"description": "This first token request, just insert your username and password."
+					},
+					"response": [
+						{
+							"name": "First Token",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "{{username}}",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "{{password}}",
+											"type": "text"
+										},
+										{
+											"key": "company",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "instance",
+											"value": "{{instance}}",
+											"type": "text"
+										},
+										{
+											"key": "grant_type",
+											"value": "{{grandType}}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{apiUrl}}token",
+									"host": [
+										"{{apiUrl}}token"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "List companies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{firstToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{apiUrl}}Administrador/ListaEmpresas",
+							"host": [
+								"{{apiUrl}}Administrador"
+							],
+							"path": [
+								"ListaEmpresas"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "HUsYVyFf6hqmlhhoS7GbqzYpZBwEcvDpxJruOpTmxjll-sYrfXSihS_Sn8ie9VC_YrejXDKuTsFZs27Q9hh73AWFtB_enDn1m8yP6dFN09FoUGsVAFjqG0cgf0m9gYXKhUeT_V709YS8oF6ciPHUbal4i4UMsN5ZC8wKKP0EwerVfIFy8ySf5wTV2X0q8b9lQuY_ZpnOGFvHr9gkV7m43ZBdHZ7ELceX1dAzS-ZHiN9t6-Nmw5vSjLM6sp1c6PaXmFYnkZhXH86v1JQfhOgT9yTqm1WhjbB45aYBeFvcCDw9mA4qSIB-_3RYyPb8IYdw",
+						"type": "string"
+					}
+				]
+			}
+		},
+		{
+			"name": "Items",
+			"item": [
+				{
+					"name": "Edit items",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "artigo",
+									"value": "XEERVILHA 2.5 KG",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}Base/Artigos/Edita/620001",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Artigos",
+								"Edita",
+								"620001"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Edita Artigos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiUrl}}{{artigos}}Edita/I0001.DDR2-1024.MT2800",
+									"host": [
+										"{{apiUrl}}{{artigos}}Edita"
+									],
+									"path": [
+										"I0001.DDR2-1024.MT2800"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*",
+									"name": "Access-Control-Allow-Headers",
+									"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*",
+									"name": "Access-Control-Allow-Methods",
+									"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"name": "Access-Control-Allow-Origin",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Content-Length",
+									"value": "5439",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Aug 2018 16:34:08 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Expires",
+									"value": "-1",
+									"name": "Expires",
+									"description": "Gives the date/time after which the response is considered stale"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0",
+									"name": "Server",
+									"description": "A name for the server"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319",
+									"name": "X-AspNet-Version",
+									"description": "Custom header"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET",
+									"name": "X-Powered-By",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								}
+							],
+							"cookie": [],
+							"body": "{\"CodigoTabLog\":\"Artigo\",\"ChaveLog\":\"Artigo\",\"EstadoBE\":\"\",\"Artigo\":\"001\",\"Descricao\":\"FRANGO PEITO\",\"DescricaoAbrev\":\"\",\"DescricaoComercial\":\"\",\"Caracteristicas\":\"\",\"CodBarras\":\"\",\"UnidadeBase\":\"UN\",\"UnidadeVenda\":\"UN\",\"UnidadeCompra\":\"UN\",\"UnidadeEntrada\":\"UN\",\"UnidadeSaida\":\"UN\",\"IVA\":\"23\",\"PercIncidenciaIVA\":100.0,\"Desconto\":0.0,\"FornecedorPrincipal\":\"\",\"STKMinimo\":0.0,\"STKMaximo\":0.0,\"STKReposicao\":0.0,\"StkActual\":0.0,\"PCMedio\":0.0,\"PCUltimo\":0.0,\"MovStock\":\"S\",\"DataUltimaEntrada\":\"1900-01-01T00:00:00\",\"DataUltimaSaida\":\"1900-01-01T00:00:00\",\"Familia\":\"1\",\"GrupoCenariosCompras\":\"\",\"ArtigoSubstituto\":\"\",\"ArtigoAssociado\":\"\",\"LocalizacaoSugestao\":\"A1\",\"ArmazemSugestao\":\"A1\",\"TipoArtigo\":\"3\",\"Classe\":0,\"NecessarioRecalcPCM\":false,\"DeduzIVA\":true,\"SujeitoDevolucao\":false,\"PCPadrao\":3.25,\"SugestaoPrCustoComposto\":0,\"UltimoDescontoComercialCompra\":0.0,\"UltimaDespesaAdicionalCompra\":0.0,\"PrazoEntrega\":0,\"QuantEconomica\":0.0,\"FormulaSaidas\":\"\",\"UltimoFornecedor\":\"\",\"SubFamilia\":\"1\",\"UltimoDocumentoCompra\":\"\",\"UltimaSerieDocumentoCompra\":\"\",\"UltimoNumDocCompra\":0,\"PesoLiquido\":0.0,\"Peso\":0.0,\"Volume\":0.0,\"Marca\":\"\",\"Modelo\":\"\",\"Garantia\":\"\",\"Anulado\":false,\"TrataNumerosSerie\":false,\"OperacaoTesouraria\":false,\"EntidadeTesouraria\":\"\",\"TipoEntidadeTesouraria\":\"\",\"TrataLotes\":false,\"UtilizaFormulaLotesEntrada\":false,\"SugestaoLoteEntradas\":\"\",\"UtilizaFormulaLotesSaida\":false,\"SugestaoLoteSaidas\":\"\",\"FormulaEntradas\":\"\",\"FormulaGPR\":\"\",\"UltimoNumeroSerie\":\"\",\"UltimoLote\":\"\",\"IntrastatCodigoPautal\":\"\",\"IntrastatPesoLiquido\":0,\"IntrastatPesoLiquidoEx\":0.0,\"Observacoes\":\"\",\"DataUltimaActualizacao\":\"2018-07-09T16:30:46\",\"SujeitoRetencao\":false,\"RubDimensao1\":\"\",\"RubDimensao2\":\"\",\"RubDimensao3\":\"\",\"Dimensao1\":\"\",\"Dimensao2\":\"\",\"Dimensao3\":\"\",\"TipoDimensao1\":\"\",\"TipoDimensao2\":\"\",\"TipoDimensao3\":\"\",\"DimensaoLote\":false,\"TrataDimensao\":0,\"Etiqueta\":\"\",\"ArtigoPai\":\"\",\"OrdemDim\":0,\"UtilizadoCCOP\":false,\"IdGDOC\":\"\",\"Pesar\":false,\"NaturezaAnalitica\":0,\"UtilizadoManutencao\":false,\"Ecovalor\":0.0,\"SujeitoEcotaxa\":false,\"EcovalorAfectaPCM\":false,\"SujeitoIEC\":false,\"CategoriaIEC\":\"\",\"CodigoTaric\":\"\",\"EmbalagemIEC\":\"\",\"CapacidadeEmbIEC\":0.0,\"UnidadeTaric\":\"\",\"FactConvIEC\":0.0,\"ValorIEC\":0.0,\"TaxaAlcool\":0.0,\"IdTipoOrigem\":0,\"FabCompAuto\":false,\"CalcNecessidades\":true,\"QtReservada\":0.0,\"QtReceber\":0.0,\"IdTipoProducao\":0,\"Desperdicio\":0.0,\"UtilizadoGPR\":false,\"DesativadoGPR\":false,\"DataDesactivacaoGPR\":\"1899-12-30T00:00:00\",\"SujeitoProRata\":false,\"PercIvaDedutivel\":100.0,\"IdClassificacao\":\"\",\"GestaoSingular\":false,\"Ano\":0,\"Selo\":\"\",\"CodigoEstampilha\":\"\",\"CodigoBebidaEspirituosa\":\"\",\"FactorUnidadeSup\":1.0,\"IsentoPagDireitos\":false,\"CodigoPautal\":\"\",\"IsentoIEC\":false,\"CodigoIsentoIEC\":\"\",\"EmModoEdicao\":true,\"CamposUtil\":[{\"Conteudo\":\"Valor\",\"Nome\":\"CDU_CampoVar1\",\"Valor\":\"\",\"Objecto\":null,\"Tipo\":1,\"ChaveLog\":\"Nome\",\"EstadoBE\":\"\",\"TipoSimplificado\":1},{\"Conteudo\":\"Valor\",\"Nome\":\"CDU_CampoVar2\",\"Valor\":\"\",\"Objecto\":null,\"Tipo\":1,\"ChaveLog\":\"Nome\",\"EstadoBE\":\"\",\"TipoSimplificado\":1},{\"Conteudo\":\"Valor\",\"Nome\":\"CDU_CampoVar3\",\"Valor\":\"\",\"Objecto\":null,\"Tipo\":1,\"ChaveLog\":\"Nome\",\"EstadoBE\":\"\",\"TipoSimplificado\":1}],\"Conteudo\":\"Artigo001DescricaoFRANGO PEITOCodBarrasUnidadeBaseUNUnidadeVendaUNUnidadeCompraUNUnidadeEntradaUNUnidadeSaidaUNIva23FornecedorPrincipalMovStockSFamilia1ArtigoSubstitutoArtigoAssociadoArmazemSugestaoA1LocalizacaoSugestaoA1TipoArtigo3DeduzIVATrueFormulaSaidasUltimoFornecedorSubFamilia1UltimoDocumentoCompraUltimaSerieDocumentoCompraUltimoNumDocCompra0MarcaModeloGarantiaSugestaoLoteEntradasSugestaoLoteSaidasFormulaEntradasUltimoNumeroSerieUltimoLoteIntrastatCodigoPautalFactorUnidadeSup1ObservacoesDataUltimaEntrada1/1/1900 12:00:00 AMDataUltimaSaida1/1/1900 12:00:00 AMDataUltimaActualizacao7/9/2018 4:30:46 PMDesconto0STKMinimo0STKMaximo0STKReposicao0Classe0NecessarioRecalcPCMFalseSugestaoPrCustoComposto0UltimoDescontoComercialCompra0UltimaDespesaAdicionalCompra0PrazoEntrega0QuantEconomica0Peso0PesoLiquido0Volume0AnuladoFalseTrataNumerosSerieFalseTrataLotesFalseUtilizaFormulaLotesEntradaFalseUtilizaFormulaLotesSaidaFalseIntrastatPesoLiquido0IntrastatPesoLiquidoEx0OperacaoTesourariaFalseEntidadeTesourariaTipoEntidadeTesourariaSujeitoRetencaoFalseSujeitoDevolucaoFalsePercIncidenciaIVA100RubDimensao1RubDimensao2RubDimensao3Dimensao1Dimensao2Dimensao3TipoDimensao1TipoDimensao2TipoDimensao3EtiquetaTrataDimensao0ArtigoPaiOrdemDim0UtilizadoCCOPFalseNaturezaAnalitica0IdGDOCSujeitoEcotaxaFalseEcovalorAfectaPCMFalseEcovalor0IdTipoOrigem0FabCompAutoFalseCalcNecessidadesTrueQtReservada0QtReceber0IdTipoProducao0Desperdicio0UtilizadoGPRFalseDesativadoGPRFalseSujeitoIECFalseCategoriaIECCodigoTaricEmbalagemIECCapacidadeEmbIEC0UnidadeTaricFactConvIEC0ValorIEC0TaxaAlcool0UtilizadoManutencaoFalseCodigoBebidaEspirituosa CodigoEstampilha IsentoIECFalseCodigoIsentoIECCodigoAdicionalAltIECSujeitoProRataFalsePercIvaDedutivel100FormulaGPRGestaoSingularFalseControlaTransformacaoValorFalseSeloGrupoCenariosComprasCodigoPautalIsentoPagDireitosFalseSujeitoRetencaoArtigoFalseRetencaoArtigoValorFalseRetencaoArtigoValor0CodigoCPVTipoCusteio0PCPadrao3.25DataCustoPadrao12/30/1899 12:00:00 AMActualizaPCPadraoFalse\",\"Locked\":false,\"ControlaTransformacaoValor\":false,\"CodigoCPV\":\"\",\"TipoCusteio\":0,\"DataCustoPadrao\":\"1899-12-30T00:00:00\",\"PCPadraoMAlt\":0.0,\"ActualizaPCPadrao\":false,\"CodigoAdicionalAltIEC\":\"\",\"SujeitoRetencaoArtigo\":false,\"RetencaoArtigoValor\":0.0,\"RetencaoArtigoTipoValor\":false}"
+						}
+					]
+				},
+				{
+					"name": "Item exists",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}Base/Artigos/Existe/A0001",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Artigos",
+								"Existe",
+								"A0001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get attribute value",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{apiUrl}}Base/Artigos/DaValorAtributo/A0001/Descricao",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Artigos",
+								"DaValorAtributo",
+								"A0001",
+								"Descricao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List items",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}Base/Artigos/LstArtigos",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Artigos",
+								"LstArtigos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create item",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Artigo\": \"A000123\",\n    \"Descricao\": \"Pentium C200\",\n    \"Caracteristicas\": \"\",\n    \"CodBarras\": \"\",\n    \"UnidadeBase\": \"UN\",\n    \"IVA\": \"20\",\n    \"Peso\": 0,\n    \"Volume\": 0,\n    \"Marca\": \"\"\n}"
+						},
+						"url": {
+							"raw": "{{apiUrl}}Base/Artigos/Actualiza/",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Artigos",
+								"Actualiza",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get attributes value",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n\t\"Descricao\"= \"Maçã Early Gold2\",\n\t\"ArmazemSugestao\"\n]"
+						},
+						"url": {
+							"raw": "{{apiUrl}}Base/Artigos/DaValorAtributos/110000",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Artigos",
+								"DaValorAtributos",
+								"110000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove item",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{apiUrl}}Base/Artigos/Remove/A0001",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Artigos",
+								"Remove",
+								"A0001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"CodigoTabLog\": \"Artigo\",\n    \"ChaveLog\": \"Artigo\",\n    \"EstadoBE\": \"\",\n    \"Artigo\": \"A0001\",\n    \"Descricao\": \"Pentium D925 Dual Core\",\n    \"DescricaoAbrev\": \"qwerty\",\n    \"DescricaoComercial\": \"\",\n    \"Caracteristicas\": \"\",\n    \"CodBarras\": \"5601234901248\",\n    \"UnidadeBase\": \"UN\",\n    \"UnidadeVenda\": \"UN\",\n    \"UnidadeCompra\": \"UN\",\n    \"UnidadeEntrada\": \"UN\",\n    \"UnidadeSaida\": \"UN\",\n    \"IVA\": \"20\",\n    \"PercIncidenciaIVA\": 100,\n    \"Desconto\": 0,\n    \"FornecedorPrincipal\": \"\",\n    \"STKMinimo\": 10,\n    \"STKMaximo\": 25,\n    \"STKReposicao\": 14,\n    \"StkActual\": 0,\n    \"PCMedio\": 0,\n    \"PCUltimo\": 0,\n    \"MovStock\": \"S\",\n    \"DataUltimaEntrada\": \"2016-04-24T14:51:05\",\n    \"DataUltimaSaida\": \"2016-03-10T15:23:35\",\n    \"Familia\": \"H01\",\n    \"GrupoCenariosCompras\": \"\",\n    \"ArtigoSubstituto\": \"\",\n    \"ArtigoAssociado\": \"\",\n    \"LocalizacaoSugestao\": \"A1.A.1.001\",\n    \"ArmazemSugestao\": \"A1\",\n    \"TipoArtigo\": \"3\",\n    \"Classe\": 0,\n    \"NecessarioRecalcPCM\": false,\n    \"DeduzIVA\": true,\n    \"SujeitoDevolucao\": true,\n    \"PCPadrao\": 0,\n    \"SugestaoPrCustoComposto\": 0,\n    \"UltimoDescontoComercialCompra\": 22.75,\n    \"UltimaDespesaAdicionalCompra\": 0,\n    \"PrazoEntrega\": 15,\n    \"QuantEconomica\": 10,\n    \"FormulaSaidas\": \"\",\n    \"UltimoFornecedor\": \"F0001\",\n    \"SubFamilia\": \"H01.001\",\n    \"UltimoDocumentoCompra\": \"VNC\",\n    \"UltimaSerieDocumentoCompra\": \"A\",\n    \"UltimoNumDocCompra\": 2,\n    \"PesoLiquido\": 0,\n    \"Peso\": 0,\n    \"Volume\": 0,\n    \"Marca\": \"LB\",\n    \"Modelo\": \"\",\n    \"Garantia\": \"1\",\n    \"Anulado\": false,\n    \"TrataNumerosSerie\": false,\n    \"OperacaoTesouraria\": false,\n    \"EntidadeTesouraria\": \"\",\n    \"TipoEntidadeTesouraria\": \"\",\n    \"TrataLotes\": false,\n    \"UtilizaFormulaLotesEntrada\": false,\n    \"SugestaoLoteEntradas\": \"\",\n    \"UtilizaFormulaLotesSaida\": false,\n    \"SugestaoLoteSaidas\": \"\",\n    \"FormulaEntradas\": \"\",\n    \"FormulaGPR\": \"\",\n    \"UltimoNumeroSerie\": \"\",\n    \"UltimoLote\": \"\",\n    \"IntrastatCodigoPautal\": \"84716040\",\n    \"IntrastatPesoLiquido\": 6,\n    \"IntrastatPesoLiquidoEx\": 6,\n    \"Observacoes\": \"texto observações\",\n    \"DataUltimaActualizacao\": \"2018-07-26T16:36:00\",\n    \"SujeitoRetencao\": false,\n    \"RubDimensao1\": \"\",\n    \"RubDimensao2\": \"\",\n    \"RubDimensao3\": \"\",\n    \"Dimensao1\": \"\",\n    \"Dimensao2\": \"\",\n    \"Dimensao3\": \"\",\n    \"TipoDimensao1\": \"\",\n    \"TipoDimensao2\": \"\",\n    \"TipoDimensao3\": \"\",\n    \"DimensaoLote\": false,\n    \"TrataDimensao\": 0,\n    \"Etiqueta\": \"\",\n    \"ArtigoPai\": \"\",\n    \"OrdemDim\": 0,\n    \"UtilizadoCCOP\": false,\n    \"IdGDOC\": \"\",\n    \"Pesar\": false,\n    \"NaturezaAnalitica\": 0,\n    \"UtilizadoManutencao\": false,\n    \"Ecovalor\": 0,\n    \"SujeitoEcotaxa\": false,\n    \"EcovalorAfectaPCM\": false,\n    \"SujeitoIEC\": false,\n    \"CategoriaIEC\": \"\",\n    \"CodigoTaric\": \"\",\n    \"EmbalagemIEC\": \"\",\n    \"CapacidadeEmbIEC\": 0,\n    \"UnidadeTaric\": \"\",\n    \"FactConvIEC\": 0,\n    \"ValorIEC\": 0,\n    \"TaxaAlcool\": 0,\n    \"IdTipoOrigem\": 0,\n    \"FabCompAuto\": false,\n    \"CalcNecessidades\": true,\n    \"QtReservada\": 12,\n    \"QtReceber\": 20,\n    \"IdTipoProducao\": 0,\n    \"Desperdicio\": 0,\n    \"UtilizadoGPR\": false,\n    \"DesativadoGPR\": false,\n    \"DataDesactivacaoGPR\": \"1899-12-30T00:00:00\",\n    \"SujeitoProRata\": false,\n    \"PercIvaDedutivel\": 100,\n    \"IdClassificacao\": \"\",\n    \"GestaoSingular\": false,\n    \"Ano\": 0,\n    \"Selo\": \"\",\n    \"CodigoEstampilha\": \"\",\n    \"CodigoBebidaEspirituosa\": \"\",\n    \"FactorUnidadeSup\": 1,\n    \"IsentoPagDireitos\": false,\n    \"CodigoPautal\": \"\",\n    \"IsentoIEC\": false,\n    \"CodigoIsentoIEC\": \"\",\n    \"EmModoEdicao\": true,\n    \"CamposUtil\": [\n        {\n            \"Conteudo\": \"ValorMarca X\",\n            \"Nome\": \"CDU_CampoVar1\",\n            \"Valor\": \"Marca X\",\n            \"Objecto\": null,\n            \"Tipo\": 1,\n            \"ChaveLog\": \"Nome\",\n            \"EstadoBE\": \"\",\n            \"TipoSimplificado\": 1\n        },\n        {\n            \"Conteudo\": \"Valor1 Ano\",\n            \"Nome\": \"CDU_CampoVar2\",\n            \"Valor\": \"1 Ano\",\n            \"Objecto\": null,\n            \"Tipo\": 1,\n            \"ChaveLog\": \"Nome\",\n            \"EstadoBE\": \"\",\n            \"TipoSimplificado\": 1\n        },\n        {\n            \"Conteudo\": \"Valor\",\n            \"Nome\": \"CDU_CampoVar3\",\n            \"Valor\": null,\n            \"Objecto\": null,\n            \"Tipo\": 1,\n            \"ChaveLog\": \"Nome\",\n            \"EstadoBE\": \"\",\n            \"TipoSimplificado\": 1\n        }\n    ],\n    \"Conteudo\": \"ArtigoA0001DescricaoPentium D925 Dual CoreCodBarras5601234901248UnidadeBaseUNUnidadeVendaUNUnidadeCompraUNUnidadeEntradaUNUnidadeSaidaUNIva20FornecedorPrincipalMovStockSFamiliaH01ArtigoSubstitutoArtigoAssociadoArmazemSugestaoA1LocalizacaoSugestaoA1.A.1.001TipoArtigo3DeduzIVATrueFormulaSaidasUltimoFornecedorF0001SubFamiliaH01.001UltimoDocumentoCompraVNCUltimaSerieDocumentoCompraAUltimoNumDocCompra2MarcaLBModeloGarantia1SugestaoLoteEntradasSugestaoLoteSaidasFormulaEntradasUltimoNumeroSerieUltimoLoteIntrastatCodigoPautal84716040FactorUnidadeSup1Observacoestexto observaçõesDataUltimaEntrada4/24/2016 2:51:05 PMDataUltimaSaida3/10/2016 3:23:35 PMDataUltimaActualizacao7/26/2018 4:36:00 PMDesconto0STKMinimo10STKMaximo25STKReposicao14Classe0NecessarioRecalcPCMFalseSugestaoPrCustoComposto0UltimoDescontoComercialCompra22.75UltimaDespesaAdicionalCompra0PrazoEntrega15QuantEconomica10Peso0PesoLiquido0Volume0AnuladoFalseTrataNumerosSerieFalseTrataLotesFalseUtilizaFormulaLotesEntradaFalseUtilizaFormulaLotesSaidaFalseIntrastatPesoLiquido6IntrastatPesoLiquidoEx6OperacaoTesourariaFalseEntidadeTesourariaTipoEntidadeTesourariaSujeitoRetencaoFalseSujeitoDevolucaoTruePercIncidenciaIVA100RubDimensao1RubDimensao2RubDimensao3Dimensao1Dimensao2Dimensao3TipoDimensao1TipoDimensao2TipoDimensao3EtiquetaTrataDimensao0ArtigoPaiOrdemDim0UtilizadoCCOPFalseNaturezaAnalitica0IdGDOCSujeitoEcotaxaFalseEcovalorAfectaPCMFalseEcovalor0IdTipoOrigem0FabCompAutoFalseCalcNecessidadesTrueQtReservada12QtReceber20IdTipoProducao0Desperdicio0UtilizadoGPRFalseDesativadoGPRFalseSujeitoIECFalseCategoriaIECCodigoTaricEmbalagemIECCapacidadeEmbIEC0UnidadeTaricFactConvIEC0ValorIEC0TaxaAlcool0UtilizadoManutencaoFalseCodigoBebidaEspirituosa CodigoEstampilha IsentoIECFalseCodigoIsentoIECCodigoAdicionalAltIECSujeitoProRataFalsePercIvaDedutivel100FormulaGPRGestaoSingularFalseControlaTransformacaoValorFalseSeloGrupoCenariosComprasCodigoPautalIsentoPagDireitosFalseSujeitoRetencaoArtigoFalseRetencaoArtigoValorFalseRetencaoArtigoValor0CodigoCPVTipoCusteio0PCPadrao0DataCustoPadrao12/30/1899 12:00:00 AMActualizaPCPadraoFalse\",\n    \"Locked\": false,\n    \"ControlaTransformacaoValor\": false,\n    \"CodigoCPV\": \"\",\n    \"TipoCusteio\": 0,\n    \"DataCustoPadrao\": \"1899-12-30T00:00:00\",\n    \"PCPadraoMAlt\": 0,\n    \"ActualizaPCPadrao\": false,\n    \"CodigoAdicionalAltIEC\": \"\",\n    \"SujeitoRetencaoArtigo\": false,\n    \"RetencaoArtigoValor\": 0,\n    \"RetencaoArtigoTipoValor\": false\n}"
+						},
+						"url": {
+							"raw": "{{apiUrl}}Base/Artigos/Actualiza",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Artigos",
+								"Actualiza"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{secondToken}}",
+						"type": "string"
+					}
+				]
+			}
+		},
+		{
+			"name": "Customers",
+			"item": [
+				{
+					"name": "List customers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}Base/Clientes/LstClientes",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Clientes",
+								"LstClientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer exists",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}Base/Clientes/Existe/ALCAD",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Clientes",
+								"Existe",
+								"ALCAD"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get attribute value",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{apiUrl}}Base/Clientes/DaValorAtributo/2100002/Telefone",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Clientes",
+								"DaValorAtributo",
+								"2100002",
+								"Telefone"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit customers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}Base/Clientes/Edita/qwerty",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Clientes",
+								"Edita",
+								"qwerty"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"CodigoTabLog\": \"Cliente\",\n    \"ChaveLog\": \"Cliente\",\n    \"EstadoBE\": \"\",\n    \"Cliente\": \"ALCAD\",\n    \"Nome\": \"Soluciones Cad de qwerty\",\n    \"Descricao\": \"qwerty1234\",\n    \"Morada\": \"PASSEO DE PORTUGAL, 464646\",\n    \"Morada2\": \"\",\n    \"Localidade\": \"VILANUEVA DE ARRIBA\",\n    \"CodigoPostal\": \"61001\",\n    \"LocalidadeCodigoPostal\": \"MADRID\",\n    \"Telefone\": \"00.034.1.474747447\",\n    \"Telefone2\": \"\",\n    \"Fax\": \"00.034.1.4374747474\",\n    \"EnderecoWeb\": \"http://alcad.es\",\n    \"Distrito\": \"\",\n    \"GestaoDiasPag\": false,\n    \"DiaPagamento1\": 0,\n    \"DiaPagamento2\": 0,\n    \"DiaPagamento3\": 0,\n    \"NumDiasRetrocesso\": 0,\n    \"DiaInicialPerNaoPag1\": \"\",\n    \"DiaFinalPerNaoPag1\": \"\",\n    \"DiaInicialPerNaoPag2\": \"\",\n    \"DiaFinalPerNaoPag2\": \"\",\n    \"DebitoContaCorrente\": 20318.84,\n    \"DebitoVendasNaoConvertidas\": 0,\n    \"DebitoEncomendasPendentes\": 2019.46,\n    \"TipoCredito\": \"1\",\n    \"LimiteCredIdade\": false,\n    \"LimiteCredValor\": true,\n    \"LimiteIdadeSaldo\": 0,\n    \"LimiteValorSaldo\": 0,\n    \"Limitecredito\": 200000,\n    \"Desconto\": 0,\n    \"LinhaPrecos\": \"0\",\n    \"Observacoes\": \"\",\n    \"NumContribuinte\": \"989922456\",\n    \"Pais\": \"ES\",\n    \"TipoMercado\": \"1\",\n    \"ExcluirAvisosVencimento\": false,\n    \"ModoPag\": \"DEP\",\n    \"ModoRec\": \"\",\n    \"CondPag\": \"2\",\n    \"Moeda\": \"EUR\",\n    \"ModoExp\": \"05\",\n    \"Vendedor\": \"1\",\n    \"Zona\": \"20\",\n    \"NumViasDoc\": 1,\n    \"ExcluirRecapitulativos\": false,\n    \"DataCriacao\": \"2018-07-26T16:36:18\",\n    \"RubricaPagamentos\": \"PAG-OUTROS\",\n    \"RubricaRecebimentos\": \"REC-VENDAS\",\n    \"TipoTerceiro\": \"003\",\n    \"SegmentoTerceiro\": \"001\",\n    \"RegimeIvaReembolsos\": 1,\n    \"Factoring\": false,\n    \"Inactivo\": false,\n    \"ProcessaIntrastat\": true,\n    \"IntrastatPorto\": \"ACO\",\n    \"SuporteAvisosVencimento\": \"I\",\n    \"DataUltimaActualizacao\": \"2018-07-26T16:36:18\",\n    \"DescricaoComercial\": \"\",\n    \"Caracteristicas\": \"\",\n    \"Idioma\": \"ES\",\n    \"UtilizaIdioma\": true,\n    \"EfectuaRetencao\": false,\n    \"EfectuaOutrasRetencoes\": false,\n    \"SujeitoRecargo\": false,\n    \"ExcluirAlertasCob\": false,\n    \"AlertaValorSaldoCob\": false,\n    \"ValorSaldoCob\": 0,\n    \"AlertaIdadeSaldoCob\": false,\n    \"IdadeSaldoCob\": 0,\n    \"IdContactoCob\": \"\",\n    \"CalendarioCob\": \"\",\n    \"IdGDOC\": \"\",\n    \"LocalOperacao\": \"0\",\n    \"DebitoLetrasNovas\": false,\n    \"DebitoLetrasReformadas\": false,\n    \"CondDebitoLetrasParticular\": false,\n    \"JuroLetras\": 0,\n    \"JuroLetrasPostecipado\": false,\n    \"ComissaoLetras\": 0,\n    \"ComissaoLetrasPercent\": false,\n    \"PortesLetras\": 0,\n    \"CondDebitoLetrasReformadasParticular\": false,\n    \"JuroLetrasReformadas\": 0,\n    \"JuroLetrasReformadasPostecipado\": false,\n    \"ComissaoLetrasReformadas\": 0,\n    \"ComissaoLetrasReformadasPercent\": false,\n    \"PortesLetrasReformadas\": 0,\n    \"PessoaSingular\": false,\n    \"Toc\": 0.5,\n    \"FuncionarioResp\": \"\",\n    \"FuncionarioTOC\": \"\",\n    \"Delegacao\": \"\",\n    \"CentroOperacional\": \"\",\n    \"Situacao\": \"ACTIVO\",\n    \"Equipa\": \"\",\n    \"CodPriempre\": \"\",\n    \"NomeFiscal\": \"Soluciones Cad de Madrid, SA\",\n    \"B2BTrataTrans\": false,\n    \"B2BUtilArtigosParceiro\": false,\n    \"B2BEnvioNaGravacao\": false,\n    \"B2BEnderecoMail\": \"\",\n    \"B2BCertificado\": \"\",\n    \"IdB2BFormato\": \"\",\n    \"B2BEnderecoEnvio\": \"\",\n    \"B2BDocDownload\": false,\n    \"B2BArtigosParceiro\": \"\",\n    \"B2BUtilUnidadesParceiro\": false,\n    \"B2BUnidadesParceiro\": \"\",\n    \"B2BIgnoraEnvioParceiro\": false,\n    \"B2BEnvioParceiro\": \"\",\n    \"B2BIgnoraTransaccoes\": false,\n    \"B2BTransaccoes\": \"\",\n    \"CodigoGLN\": \"\",\n    \"EncargosBanco\": false,\n    \"EncargosBancos\": [],\n    \"CodigoIEC\": \"\",\n    \"CodigoIsencaoIEC\": \"\",\n    \"IsentoIEC\": false,\n    \"CambioADataDoc\": false,\n    \"EmModoEdicao\": true,\n    \"CamposUtil\": [\n        {\n            \"Conteudo\": \"ValorValor\",\n            \"Nome\": \"CDU_CampoVar1\",\n            \"Valor\": null,\n            \"Objecto\": null,\n            \"Tipo\": 1,\n            \"ChaveLog\": \"Nome\",\n            \"EstadoBE\": \"\",\n            \"TipoSimplificado\": 1\n        },\n        {\n            \"Conteudo\": \"ValorValor\",\n            \"Nome\": \"CDU_CampoVar2\",\n            \"Valor\": null,\n            \"Objecto\": null,\n            \"Tipo\": 1,\n            \"ChaveLog\": \"Nome\",\n            \"EstadoBE\": \"\",\n            \"TipoSimplificado\": 1\n        },\n        {\n            \"Conteudo\": \"ValorValor\",\n            \"Nome\": \"CDU_CampoVar3\",\n            \"Valor\": null,\n            \"Objecto\": null,\n            \"Tipo\": 1,\n            \"ChaveLog\": \"Nome\",\n            \"EstadoBE\": \"\",\n            \"TipoSimplificado\": 1\n        }\n    ],\n    \"Conteudo\": \"ClienteALCADNomeSoluciones Cad de Madrid, SANomeFiscalSoluciones Cad de Madrid, SADescricaoqwertyMoradaPASSEO DE PORTUGAL, 464646Morada2LocalidadeVILANUEVA DE ARRIBACodigoPostal61001LocalidadeCodigoPostalMADRIDTelefone00.034.1.474747447Telefone2Fax00.034.1.4374747474EnderecoWebhttp://alcad.esDistritoLinhaPrecos0UtilizaIdiomaTrueIdiomaESEfectuaRetencaoFalseEfectuaOutrasRetencoesFalseSujeitoRecargoFalseLimiteCredValorTrueLimiteCredIdadeFalseLimiteIdadeSaldo0LimiteValorSaldo0LimiteCredito200000ExcluirAlertasCobFalseAlertaValorSaldoCobFalseValorSaldoCob0AlertaIdadeSaldoCobFalseIdadeSaldoCob0CalendarioCobIdContactoCobTipoCredito1IdGDOCObservacoesNumContribuinte989922456ContribuinteNaoResidentePaisESTipoMercado1ModoPagDEPModoRecCondPag2MoedaEURModoExp05Vendedor1Zona20RubricaPagamentosPAG-OUTROSRubricaRecebimentosREC-VENDASTipoTerceiro003IntrastatPortoACOSuporteAvisosVencimentoISegmentoTerceiro001DataCriacao7/26/2018 4:36:18 PMDataUltimaActualizacao7/26/2018 4:36:18 PMDesconto0DebitoContaCorrente20318.84ExcluirAvisosVencimentoFalseNumViasDoc1ExcluirRecapitulativosFalseInactivoFalseVendasNaoConvertidas0DebitoEncomendasPendentes2019.46ProcessaIntrastatTrueLocalOperacao0Toc0.5FuncionarioRespFuncionarioTOCDelegacaoCentroOperacionalSituacaoACTIVOEquipaCodPRIEMPREIdB2BFormatoB2BEnderecoMailB2BEnderecoEnvioB2BEnvioNaGravacaoFalseB2BTrataTransFalseB2BCertificadoB2BDocDownloadFalseB2BUtilArtigosParceiroFalseB2BArtigosParceiroB2BUtilUnidadesParceiroFalseB2BUnidadesParceiroB2BIgnoraEnvioParceiroFalseB2BEnvioParceiroB2BIgnoraTransaccoesFalseB2BTransaccoesCodigoIECCodigoIsencaoIECIsentoIECFalseCodigoGLNGestaoDiasPagFalseDiaPagamento10DiaPagamento20DiaPagamento30NumDiasRetrocesso0DiaInicialPerNaoPag1DataFinalPerNaoPag1DiaInicialPerNaoPag2DiaFinalPerNaoPag2EncargosBancoFalseRegimeIvaReembolsos1FactoringFalseCambioADataDocFalseFacturacaoAgrupadaBillingFalseActividadeEmpresarialTrueAutoFacturacaoFalseTrataIvaCaixaFalseeGAR_CodigoAPAeGAR_IsentaFalseeGAR_NumPGLeGAR_TipoProdutorTipoRemetenteTipoRemetenteEntidadeParceira\",\n    \"ContribuinteNaoResidente\": \"\",\n    \"IntegraCessaoFactoring\": false,\n    \"ActividadeEmpresarial\": true,\n    \"eGAR_Isenta\": false,\n    \"eGAR_CodigoAPA\": \"\",\n    \"eGAR_NumPGL\": \"\",\n    \"eGAR_TipoProdutor\": \"\",\n    \"TipoRemetente\": \"\",\n    \"CodigoLocal\": \"\",\n    \"Locked\": false,\n    \"AutoFacturacao\": false,\n    \"TrataIvaCaixa\": false,\n    \"FacturacaoAgrupadaBilling\": false,\n    \"ShareBI\": {\n        \"Conteudo\": \"VersaoCloud0ActualizacaoCloudActualizacaoERP\",\n        \"EstadoBE\": \"\",\n        \"ChaveLog\": \"\",\n        \"CodigoTabLog\": \"\",\n        \"PropExcluirLog\": \"\",\n        \"VersaoCloud\": 0,\n        \"ActualizacaoCloud\": \"\",\n        \"ActualizacaoERP\": \"\"\n    },\n    \"EntidadeParceira\": \"\"\n}"
+						},
+						"url": {
+							"raw": "{{apiUrl}}Base/Clientes/Actualiza",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Clientes",
+								"Actualiza"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get attributes value",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n\t\"Nome\",\n\t\"Descricao\"\n]"
+						},
+						"url": {
+							"raw": "{{apiUrl}}Base/Clientes/DaValorAtributos/ALCAD",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Clientes",
+								"DaValorAtributos",
+								"ALCAD"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create customer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Cliente\": \"NUNOA\",\n    \"Nome\": \"Soluciones Cad de qwerty\",\n    \"Descricao\": \"qwerty1234\",\n    \"Morada\": \"PASSEO DE PORTUGAL, 12345\",\n    \"Localidade\": \"VILANUEVA DE ARRIBA\",\n    \"CodigoPostal\": \"61001\",\n    \"LocalidadeCodigoPostal\": \"MADRID\",\n    \"Telefone\": \"00.034.1.474747447\",\n    \"Fax\": \"00.034.1.4374747474\",\n    \"EnderecoWeb\": \"http://alcad.es\",\n    \"Distrito\": \"\",\n    \"NumContribuinte\": \"989922456\",\n    \"Pais\": \"ES\",\n    \"Moeda\": \"EUR\"\n}"
+						},
+						"url": {
+							"raw": "{{apiUrl}}Base/Clientes/Actualiza",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Clientes",
+								"Actualiza"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove customer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{apiUrl}}Base/Clientes/Remove/qwerty",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Clientes",
+								"Remove",
+								"qwerty"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{secondToken}}",
+						"type": "string"
+					}
+				]
+			}
+		},
+		{
+			"name": "Providers",
+			"item": [
+				{
+					"name": "Provider exists",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}Base/Fornecedores/Existe/F0001",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Fornecedores",
+								"Existe",
+								"F0001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Attribute value",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{apiUrl}}Base/Fornecedores/DaValorAtributo/F0001/Nome",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Fornecedores",
+								"DaValorAtributo",
+								"F0001",
+								"Nome"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit providers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}Base/Fornecedores/Edita/NUNOA",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Fornecedores",
+								"Edita",
+								"NUNOA"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create provider",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Fornecedor\": \"NUNOA\",\n    \"Nome\": \"Soluciones Cad de qwerty\",\n    \"Descricao\": \"qwerty1234\",\n    \"Morada\": \"PASSEO DE PORTUGAL, 12345\",\n    \"Localidade\": \"VILANUEVA DE ARRIBA\",\n    \"CodigoPostal\": \"61001\",\n    \"LocalidadeCodigoPostal\": \"MADRID\",\n    \"Telefone\": \"00.034.1.474747447\",\n    \"Fax\": \"00.034.1.4374747474\",\n    \"EnderecoWeb\": \"http://alcad.es\",\n    \"Distrito\": \"\",\n    \"NumContribuinte\": \"989922456\",\n    \"Pais\": \"ES\",\n    \"Moeda\": \"EUR\"\n}"
+						},
+						"url": {
+							"raw": "{{apiUrl}}Base/Fornecedores/Actualiza",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Fornecedores",
+								"Actualiza"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"CodigoTabLog\": \"Fornecedor\",\n    \"ChaveLog\": \"Fornecedor\",\n    \"EstadoBE\": \"\",\n    \"Fornecedor\": \"NUNOA\",\n    \"Nome\": \"Soluciones Cad de qwerty\",\n    \"Descricao\": \"qwerty1234\",\n    \"Morada\": \"PASSEO DE PORTUGAL, 12345\",\n    \"Morada2\": \"\",\n    \"Localidade\": \"VILANUEVA DE ARRIBA\",\n    \"CodigoPostal\": \"61001\",\n    \"LocalidadeCodigoPostal\": \"MADRID\",\n    \"Telefone\": \"00.034.1.474747447\",\n    \"Fax\": \"00.034.1.4374747474\",\n    \"EnderecoWeb\": \"http://alcad.es\",\n    \"Distrito\": \"\",\n    \"GestaoDiasPag\": false,\n    \"DiaPagamento1\": 0,\n    \"DiaPagamento2\": 0,\n    \"DiaPagamento3\": 0,\n    \"NumDiasRetrocesso\": 0,\n    \"DebitoContaCorrente\": 0,\n    \"DebitoComprasNaoConvertidas\": 0,\n    \"DebitoEncomendasPendentes\": 0,\n    \"Limitecredito\": 0,\n    \"LimiteValorSaldo\": 0,\n    \"LimiteCredValor\": false,\n    \"LimiteCredIdade\": false,\n    \"LimiteIdadeSaldo\": 0,\n    \"Desconto\": 0,\n    \"PrazoEntrega\": \"\",\n    \"Observacoes\": \"\",\n    \"NumContribuinte\": \"989922456\",\n    \"Pais\": \"ES\",\n    \"TipoMercado\": \"0\",\n    \"CondPag\": \"\",\n    \"ModoPag\": \"\",\n    \"ModoRec\": \"\",\n    \"Moeda\": \"EUR\",\n    \"ModoExp\": \"\",\n    \"NumVias\": 0,\n    \"ExcluirRecapitulativos\": false,\n    \"DataCriacao\": \"1899-12-30T00:00:00\",\n    \"RubricaPagamentos\": \"\",\n    \"RubricaRecebimentos\": \"\",\n    \"TipoTerceiro\": \"\",\n    \"SegmentoTerceiro\": \"\",\n    \"RegimeIvaReembolsos\": 0,\n    \"Inactivo\": false,\n    \"MoradaAlternativa\": \"\",\n    \"RegimeEspecial\": false,\n    \"ProcessaIntrastat\": false,\n    \"IntrastatPorto\": \"\",\n    \"DataUltimaActualizacao\": \"2018-11-12T15:24:05\",\n    \"TipoRendimento\": \"\",\n    \"EfectuaOutrasRetencoes\": false,\n    \"EfectuaRetencao\": false,\n    \"ValorRetencao\": 0,\n    \"TextoExcepcaoRetencao\": \"\",\n    \"Idioma\": \"\",\n    \"UtilizaIdioma\": false,\n    \"PosCustosBalSoc\": 0,\n    \"EmModoEdicao\": true,\n    \"CamposUtil\": [\n        {\n            \"Conteudo\": \"ValorValor\",\n            \"Nome\": \"CDU_CampoVar1\",\n            \"Valor\": null,\n            \"Objecto\": null,\n            \"Tipo\": 1,\n            \"ChaveLog\": \"Nome\",\n            \"EstadoBE\": \"\",\n            \"TipoSimplificado\": 1\n        },\n        {\n            \"Conteudo\": \"ValorValor\",\n            \"Nome\": \"CDU_CampoVar2\",\n            \"Valor\": null,\n            \"Objecto\": null,\n            \"Tipo\": 1,\n            \"ChaveLog\": \"Nome\",\n            \"EstadoBE\": \"\",\n            \"TipoSimplificado\": 1\n        },\n        {\n            \"Conteudo\": \"ValorValor\",\n            \"Nome\": \"CDU_CampoVar3\",\n            \"Valor\": null,\n            \"Objecto\": null,\n            \"Tipo\": 1,\n            \"ChaveLog\": \"Nome\",\n            \"EstadoBE\": \"\",\n            \"TipoSimplificado\": 1\n        }\n    ],\n    \"Conteudo\": \"FornecedorNUNOANomeSoluciones Cad de qwertyNomeFiscalSoluciones Cad de qwertyDescricaoqwerty1234MoradaPASSEO DE PORTUGAL, 12345Morada2LocalidadeVILANUEVA DE ARRIBACodigoPostal61001LocalidadeCodigoPostalMADRIDTelefone00.034.1.474747447Fax00.034.1.4374747474EnderecoWebhttp://alcad.esDistritoDesconto0PrazoEntregaDebitoContaCorrente0LimiteCredito0ObservacoesNumContribuinte989922456ContribuinteNaoResidentePaisESTipoMercado0CondPagModoPagModoRecMoedaEURModoExpNumVias0ExcluirRecapitulativosFalseDataCriacao30/12/1899 00:00:00RubricaPagamentosRubricaRecebimentosTipoTerceiroSegmentoTerceiroInactivoFalseRegimeEspecialFalseDebitoComprasNaoConvertidas0DebitoEncomendasPendentes0ProcessaIntrastatFalseIntrastatPortoDataUltimaActualizacao12/11/2018 15:24:05EfectuaRetencaoFalseValorRetencao0TextoExcepcaoRetencaoEfectuaOutrasRetencoesFalseTipoRendimentoLimiteCredValorFalseLimiteCredIdadeFalseLimiteIdadeSaldo0LimiteValorSaldo0IdiomaUtilizaIdiomaFalseIdGDOCPosCustosBalSoc0LocalOperacaoIdB2BFormatoB2BEnderecoMailB2BEnderecoEnvioB2BEnvioNaGravacaoFalseB2BTrataTransFalseB2BCertificadoB2BDocDownloadFalseB2BUtilArtigosParceiroFalseB2BArtigosParceiroB2BUtilUnidadesParceiroFalseB2BUnidadesParceiroB2BIgnoraEnvioParceiroFalseB2BEnvioParceiroB2BIgnoraTransaccoesFalseB2BTransaccoesCodigoIECCodigoIsencaoIECIsentoIECFalseCodigoGLNGestaoDiasPagFalseDiaPagamento10DiaPagamento20DiaPagamento30NumDiasRetrocesso0RegimeIvaReembolsos0CambioADataDocFalseAutoFacturacaoFalseSubUtilizadorATSenhaSubUtilizadorATMatriculaConservatoriaCapitalSocial0TrataIvaCaixaFalseeGAR_IsentaFalseeGAR_TipoProdutoreGAR_CodigoAPAeGAR_NumPGLTipoRemetenteTipoRemetenteEntidadeParceiraActividadeEmpresarialFalse\",\n    \"IdGDOC\": \"\",\n    \"LocalOperacao\": \"\",\n    \"PessoaSingular\": false,\n    \"NomeFiscal\": \"Soluciones Cad de qwerty\",\n    \"B2BTrataTrans\": false,\n    \"B2BUtilArtigosParceiro\": false,\n    \"B2BEnvioNaGravacao\": false,\n    \"B2BEnderecoMail\": \"\",\n    \"B2BCertificado\": \"\",\n    \"IdB2BFormato\": \"\",\n    \"B2BEnderecoEnvio\": \"\",\n    \"B2BDocDownload\": false,\n    \"B2BArtigosParceiro\": \"\",\n    \"B2BUtilUnidadesParceiro\": false,\n    \"B2BUnidadesParceiro\": \"\",\n    \"B2BIgnoraEnvioParceiro\": false,\n    \"B2BEnvioParceiro\": \"\",\n    \"B2BIgnoraTransaccoes\": false,\n    \"B2BTransaccoes\": \"\",\n    \"CodigoIEC\": \"\",\n    \"CodigoIsencaoIEC\": \"\",\n    \"IsentoIEC\": false,\n    \"CambioADataDoc\": false,\n    \"CodigoGLN\": \"\",\n    \"ContribuinteNaoResidente\": \"\",\n    \"Locked\": false,\n    \"AutoFacturacao\": false,\n    \"SubUtilizadorAT\": \"\",\n    \"SenhaSubUtilizadorAT\": \"\",\n    \"Matricula\": \"\",\n    \"Conservatoria\": \"\",\n    \"CapitalSocial\": 0,\n    \"SenhaATEncriptada\": true,\n    \"TrataIvaCaixa\": false,\n    \"ShareBI\": {\n        \"Conteudo\": \"VersaoCloud0ActualizacaoCloudActualizacaoERP\",\n        \"EstadoBE\": \"\",\n        \"ChaveLog\": \"\",\n        \"CodigoTabLog\": \"\",\n        \"PropExcluirLog\": \"\",\n        \"VersaoCloud\": 0,\n        \"ActualizacaoCloud\": \"\",\n        \"ActualizacaoERP\": \"\",\n        \"AbvtApl\": \"BAS\"\n    },\n    \"EntidadeParceira\": \"\",\n    \"ControlaPagDivida\": false,\n    \"DataValidadeSegSocial\": \"1899-12-30T00:00:00\",\n    \"DataValidadeFinancas\": \"1899-12-30T00:00:00\",\n    \"ActividadeEmpresarial\": false,\n    \"eGAR_Isenta\": false,\n    \"eGAR_CodigoAPA\": \"\",\n    \"eGAR_NumPGL\": \"\",\n    \"eGAR_TipoProdutor\": \"\",\n    \"TipoRemetente\": \"\",\n    \"CodigoLocal\": \"\",\n    \"AbvtApl\": \"BAS\"\n}"
+						},
+						"url": {
+							"raw": "{{apiUrl}}Base/Fornecedores/Actualiza",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Fornecedores",
+								"Actualiza"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get attributes values",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n\t\"Nome\",\n\t\"Descricao\"\n]"
+						},
+						"url": {
+							"raw": "{{apiUrl}}Base/Fornecedores/DaValorAtributos/F0001",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Fornecedores",
+								"DaValorAtributos",
+								"F0001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rrmove provider",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{apiUrl}}Base/Fornecedores/Remove/NUNOA",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Fornecedores",
+								"Remove",
+								"NUNOA"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{secondToken}}",
+						"type": "string"
+					}
+				]
+			}
+		},
+		{
+			"name": "Sales",
+			"item": [
+				{
+					"name": "Get attribute value",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{apiUrl}}Vendas/TabVendas/DaValorAtributo/FA/Descricao",
+							"host": [
+								"{{apiUrl}}Vendas"
+							],
+							"path": [
+								"TabVendas",
+								"DaValorAtributo",
+								"FA",
+								"Descricao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Document exists?",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}Vendas/TabVendas/Existe/FA",
+							"host": [
+								"{{apiUrl}}Vendas"
+							],
+							"path": [
+								"TabVendas",
+								"Existe",
+								"FA"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit document",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}Vendas/Docs/Edita/000/ECL/A/12",
+							"host": [
+								"{{apiUrl}}Vendas"
+							],
+							"path": [
+								"Docs",
+								"Edita",
+								"000",
+								"ECL",
+								"A",
+								"12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List series",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}Base/Series/ListaSeries/V/FS/false",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Series",
+								"ListaSeries",
+								"V",
+								"FS",
+								"false"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add line",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"TipoDoc\": \"FA\",\n\t\"NumDoc\": \"5\",\n\t\"Entidade\": \"ALCAD\",\n\t\"TipoEntidade\": \"C\",\n\t\"Serie\": \"A\"\n}"
+						},
+						"url": {
+							"raw": "{{apiUrl}}Vendas/Docs/AdicionaLinha/A0001/1/A1",
+							"host": [
+								"{{apiUrl}}Vendas"
+							],
+							"path": [
+								"Docs",
+								"AdicionaLinha",
+								"A0001",
+								"1",
+								"A1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transform Document",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Tipodoc\": \"FA\",\r\n  \"Serie\": \"A\",\r\n  \"Entidade\": \"SOFRIO\",\r\n  \"TipoEntidade\": \"C\",\r\n  \"DataDoc\":\"12/11/2018\",\r\n  \"DataVenc\":\"12/12/2018\"\r\n}"
+						},
+						"url": {
+							"raw": "{{apiUrl}}Vendas/Docs/TransformDocument/ECL/A/2/000/false",
+							"host": [
+								"{{apiUrl}}Vendas"
+							],
+							"path": [
+								"Docs",
+								"TransformDocument",
+								"ECL",
+								"A",
+								"2",
+								"000",
+								"false"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fill related data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Tipodoc\": \"FA\",\n    \"Entidade\": \"Sofrio\",\n    \"TipoEntidade\": \"C\",\n    \"Serie\": \"C\"\n}"
+						},
+						"url": {
+							"raw": "{{apiUrl}}Vendas/Docs/PreencheDadosRelacionados/",
+							"host": [
+								"{{apiUrl}}Vendas"
+							],
+							"path": [
+								"Docs",
+								"PreencheDadosRelacionados",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get attributes values",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n\t\"Estado\"\n]"
+						},
+						"url": {
+							"raw": "{{apiUrl}}Vendas/Docs/DaValorAtributos/CCC/2022/FA/1/",
+							"host": [
+								"{{apiUrl}}Vendas"
+							],
+							"path": [
+								"Docs",
+								"DaValorAtributos",
+								"CCC",
+								"2022",
+								"FA",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create document",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Linhas\": [\r\n    {\r\n      \"Artigo\": \"A0001\",\r\n      \"Quantidade\": \"1\"\r\n    },\r\n    {\r\n      \"Artigo\": \"A0002\",\r\n      \"Quantidade\": \"1\"\r\n    }\r\n  ],\r\n  \"Tipodoc\": \"FA\",\r\n  \"Serie\": \"C\",\r\n  \"Entidade\": \"Sofrio\",\r\n  \"TipoEntidade\": \"C\",\r\n  \"DataDoc\":\"12/11/2018\",\r\n  \"DataVenc\":\"12/12/2018\"\r\n}"
+						},
+						"url": {
+							"raw": "{{apiUrl}}Vendas/Docs/CreateDocument/",
+							"host": [
+								"{{apiUrl}}Vendas"
+							],
+							"path": [
+								"Docs",
+								"CreateDocument",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Purchases",
+			"item": [
+				{
+					"name": "List series",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}Base/Series/ListaSeries/C/ECF/false",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Series",
+								"ListaSeries",
+								"C",
+								"ECF",
+								"false"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get attribute value",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{apiUrl}}Compras/TabCompras/DaValorAtributo/ECF/Descricao",
+							"host": [
+								"{{apiUrl}}Compras"
+							],
+							"path": [
+								"TabCompras",
+								"DaValorAtributo",
+								"ECF",
+								"Descricao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit document",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}Compras/Docs/Edita/123/ECF/A/1",
+							"host": [
+								"{{apiUrl}}Compras"
+							],
+							"path": [
+								"Docs",
+								"Edita",
+								"123",
+								"ECF",
+								"A",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Document exists",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}Compras/TabCompras/Existe/ECF/",
+							"host": [
+								"{{apiUrl}}Compras"
+							],
+							"path": [
+								"TabCompras",
+								"Existe",
+								"ECF",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get attributes value",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n\t\"Nome\"\n]"
+						},
+						"url": {
+							"raw": "{{apiUrl}}Compras/Docs/DaValorAtributos/ECF/8/A/000/",
+							"host": [
+								"{{apiUrl}}Compras"
+							],
+							"path": [
+								"Docs",
+								"DaValorAtributos",
+								"ECF",
+								"8",
+								"A",
+								"000",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fill related data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Tipodoc\": \"ECF\",\n    \"Entidade\": \"F0001\",\n    \"TipoEntidade\": \"F\",\n    \"Serie\": \"A\"\n}"
+						},
+						"url": {
+							"raw": "{{apiUrl}}Compras/Docs/PreencheDadosRelacionados/",
+							"host": [
+								"{{apiUrl}}Compras"
+							],
+							"path": [
+								"Docs",
+								"PreencheDadosRelacionados",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add line",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"TipoDoc\": \"ECF\",\n\t\"NumDoc\": \"8\",\n\t\"Entidade\": \"F0001\",\n\t\"TipoEntidade\": \"F\",\n\t\"Serie\": \"A\"\n}"
+						},
+						"url": {
+							"raw": "{{apiUrl}}Compras/Docs/AdicionaLinha/A0001/1/A1",
+							"host": [
+								"{{apiUrl}}Compras"
+							],
+							"path": [
+								"Docs",
+								"AdicionaLinha",
+								"A0001",
+								"1",
+								"A1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create document",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Linhas\": [\r\n    {\r\n      \"Artigo\": \"A0001\",\r\n      \"Quantidade\": \"1\"\r\n    },\r\n    {\r\n      \"Artigo\": \"A0002\",\r\n      \"Quantidade\": \"1\"\r\n    }\r\n  ],\r\n  \"Tipodoc\": \"ECF\",\r\n  \"Serie\": \"A\",\r\n  \"Entidade\": \"FVD\",\r\n  \"TipoEntidade\": \"F\",\r\n  \"DataDoc\":\"12/11/2018\",\r\n  \"DataVenc\":\"12/12/2018\"\r\n}"
+						},
+						"url": {
+							"raw": "{{apiUrl}}Compras/Docs/CreateDocument",
+							"host": [
+								"{{apiUrl}}Compras"
+							],
+							"path": [
+								"Docs",
+								"CreateDocument"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transform Document",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Tipodoc\": \"VFA\",\n\t\"Serie\": \"A\",\n\t\"Entidade\": \"FVD\",\n\t\"TipoEntidade\": \"F\",\n\t\"DataDoc\":\"12/11/2018\",\n\t\"DataIntroducao\":\"12/12/2018\"\n}"
+						},
+						"url": {
+							"raw": "{{apiUrl}}Compras/Docs/TransformDocument/ECF/A/1/000/true",
+							"host": [
+								"{{apiUrl}}Compras"
+							],
+							"path": [
+								"Docs",
+								"TransformDocument",
+								"ECF",
+								"A",
+								"1",
+								"000",
+								"true"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Internals",
+			"item": [
+				{
+					"name": "Edit document",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{apiUrl}}Internos/TabInternos/Edita/RI/",
+							"host": [
+								"{{apiUrl}}Internos"
+							],
+							"path": [
+								"TabInternos",
+								"Edita",
+								"RI",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List documents",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}Internos/TabInternos/LstDocInternos/",
+							"host": [
+								"{{apiUrl}}Internos"
+							],
+							"path": [
+								"TabInternos",
+								"LstDocInternos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get attribute value",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}Internos/TabInternos/DaValorAtributo/ES/Descricao",
+							"host": [
+								"{{apiUrl}}Internos"
+							],
+							"path": [
+								"TabInternos",
+								"DaValorAtributo",
+								"ES",
+								"Descricao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Document exists",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}Internos/TabInternos/Existe/ES",
+							"host": [
+								"{{apiUrl}}Internos"
+							],
+							"path": [
+								"TabInternos",
+								"Existe",
+								"ES"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Document moved",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}Internos/TabInternos/DocMovimentado/ES/",
+							"host": [
+								"{{apiUrl}}Internos"
+							],
+							"path": [
+								"TabInternos",
+								"DocMovimentado",
+								"ES",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List series",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}Base/Series/ListaSeries/N/ES/false",
+							"host": [
+								"{{apiUrl}}Base"
+							],
+							"path": [
+								"Series",
+								"ListaSeries",
+								"N",
+								"ES",
+								"false"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get attributes value",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n\t\"Nome\"\n]"
+						},
+						"url": {
+							"raw": "{{apiUrl}}Internos/Docs/DaValorAtributos/RI/1/A/000/",
+							"host": [
+								"{{apiUrl}}Internos"
+							],
+							"path": [
+								"Docs",
+								"DaValorAtributos",
+								"RI",
+								"1",
+								"A",
+								"000",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Calculate total values",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"TipoDoc\": \"PRD\",\n\t\"NumDoc\": \"3\",\n\t\"Serie\": \"A\",\n\t\"Entidade\": \"SOFRIO\",\n\t\"TipoEntidade\": \"C\"\n}"
+						},
+						"url": {
+							"raw": "{{apiUrl}}Internos/Docs/CalculaValoresTotais/",
+							"host": [
+								"{{apiUrl}}Internos"
+							],
+							"path": [
+								"Docs",
+								"CalculaValoresTotais",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Inventory",
+			"item": [
+				{
+					"name": "Get attribute value",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}Inventario/Armazens/DaValorAtributo/A1/Descricao/",
+							"host": [
+								"{{apiUrl}}Inventario"
+							],
+							"path": [
+								"Armazens",
+								"DaValorAtributo",
+								"A1",
+								"Descricao",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Warehouse exists",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}Inventario/Armazens/Existe/A1/",
+							"host": [
+								"{{apiUrl}}Inventario"
+							],
+							"path": [
+								"Armazens",
+								"Existe",
+								"A1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit warehouse",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}Inventario/Armazens/Edita/A1/",
+							"host": [
+								"{{apiUrl}}Inventario"
+							],
+							"path": [
+								"Armazens",
+								"Edita",
+								"A1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get compossition document description",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}Inventario/TabComposicoes/DaDescricao/COM",
+							"host": [
+								"{{apiUrl}}Inventario"
+							],
+							"path": [
+								"TabComposicoes",
+								"DaDescricao",
+								"COM"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": " Warehouse transfers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"TipoDoc\": \"TRA\",\n\t\"Serie\": \"A\",\n\t\"Data\": \"12/11/2018\",\n\t\"Moeda\": \"EUR\",\n\t\"LinhasOrigem\":\n\t[\n\t\t{\n\t\t\t\"Artigo\":\"A0001\",\n            \"Armazem\":\"A1\",\n            \"Localizacao\":\"A1\",\n            \"Lote\":\"\",\n            \"Quantidade\":2,\n            \"PrecUnit\":10.5,\n            \"INV_EstadoOrigem\":\"DISP\",\n            \"LinhasDestino\":\n            [\n            \t{\n            \t\t\"Artigo\":\"A0001\",\n\t\t            \"Armazem\":\"A2\",\n\t\t            \"Localizacao\":\"A2\",\n\t\t            \"Lote\":\"\",\n\t\t            \"Quantidade\":2,\n\t\t            \"PrecUnit\":10.5,\n\t\t            \"INV_EstadoDestino\":\"DISP\"\n            \t}\n            ]\n\t\t}\n\t]\n}"
+						},
+						"url": {
+							"raw": "{{apiUrl}}Inventario/Transferencias/CreateTransfer",
+							"host": [
+								"{{apiUrl}}Inventario"
+							],
+							"path": [
+								"Transferencias",
+								"CreateTransfer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get attributes value",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n\t\"Descricao\"\n]"
+						},
+						"url": {
+							"raw": "{{apiUrl}}Inventario/Armazens/DaValorAtributos/A1/",
+							"host": [
+								"{{apiUrl}}Inventario"
+							],
+							"path": [
+								"Armazens",
+								"DaValorAtributos",
+								"A1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fill related data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Tipodoc\": \"TRA\",\n    \"Entidade\": \"SOFRIO\",\n    \"TipoEntidade\": \"C\",\n    \"Serie\": \"A\"\n}"
+						},
+						"url": {
+							"raw": "{{apiUrl}}Inventario/Transferencias/PreencheDadosRelacionados/",
+							"host": [
+								"{{apiUrl}}Inventario"
+							],
+							"path": [
+								"Transferencias",
+								"PreencheDadosRelacionados",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ContactsOpportunities",
+			"item": [
+				{
+					"name": "Edit sale opportunity",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}CRM/OportunidadesVenda/Edita/OPV002/",
+							"host": [
+								"{{apiUrl}}CRM"
+							],
+							"path": [
+								"OportunidadesVenda",
+								"Edita",
+								"OPV002",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Existing quotes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}CRM/OportunidadesVenda/ExistemCotacoes/b81b23d4-f25a-11e8-b7b6-40a3cc458fd9",
+							"host": [
+								"{{apiUrl}}CRM"
+							],
+							"path": [
+								"OportunidadesVenda",
+								"ExistemCotacoes",
+								"b81b23d4-f25a-11e8-b7b6-40a3cc458fd9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Oportunity exists",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}CRM/OportunidadesVenda/Existe/OPV001",
+							"host": [
+								"{{apiUrl}}CRM"
+							],
+							"path": [
+								"OportunidadesVenda",
+								"Existe",
+								"OPV001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Proposal exists",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}CRM/PropostasOPV/Existe/816B85C7-98E3-11DC-A3E8-0020E024149C/0",
+							"host": [
+								"{{apiUrl}}CRM"
+							],
+							"path": [
+								"PropostasOPV",
+								"Existe",
+								"816B85C7-98E3-11DC-A3E8-0020E024149C",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Document exists",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}CRM/PropostasOPV/ExisteDocumento/A042EF1F-98E7-11DC-A3E8-0020E024149C/2/V/ORC/",
+							"host": [
+								"{{apiUrl}}CRM"
+							],
+							"path": [
+								"PropostasOPV",
+								"ExisteDocumento",
+								"A042EF1F-98E7-11DC-A3E8-0020E024149C",
+								"2",
+								"V",
+								"ORC",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit proposal",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}CRM/PropostasOPV/Edita/F6D93CE0-F2F4-11E8-B7B8-40A3CC458FD9/2/true",
+							"host": [
+								"{{apiUrl}}CRM"
+							],
+							"path": [
+								"PropostasOPV",
+								"Edita",
+								"F6D93CE0-F2F4-11E8-B7B8-40A3CC458FD9",
+								"2",
+								"true"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get attribute value (Proposals)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}CRM/PropostasOPV/DaValorAtributo/816B85C7-98E3-11DC-A3E8-0020E024149C/1/Descricao",
+							"host": [
+								"{{apiUrl}}CRM"
+							],
+							"path": [
+								"PropostasOPV",
+								"DaValorAtributo",
+								"816B85C7-98E3-11DC-A3E8-0020E024149C",
+								"1",
+								"Descricao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get attribute value (Sales opoortunity)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}CRM/OportunidadesVenda/DaValorAtributo/OPV001/ID/",
+							"host": [
+								"{{apiUrl}}CRM"
+							],
+							"path": [
+								"OportunidadesVenda",
+								"DaValorAtributo",
+								"OPV001",
+								"ID",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create sales opportunities",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Oportunidade\": \"OPV04\",\n    \"Descricao\": \"Teste\",\n    \"DataCriacao\": \"11/27/2018\",\n    \"DataExpiracao\": \"11/27/2018\",\n    \"Resumo\": \"Teste\",\n    \"Entidade\": \"SOFRIO\",\n    \"TipoEntidade\": \"C\",\n    \"EstadoVenda\": \"0\",\n    \"Moeda\": \"EUR\",\n    \"Vendedor\": \"1\",\n    \"CicloVenda\": \"CV_SOFT\",\n    \"Zona\": \"01\"\n}"
+						},
+						"url": {
+							"raw": "{{apiUrl}}CRM/OportunidadesVenda/Actualiza/\"\"",
+							"host": [
+								"{{apiUrl}}CRM"
+							],
+							"path": [
+								"OportunidadesVenda",
+								"Actualiza",
+								"\"\""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create proposals for sale opportunity",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Linhas\": [\n        {\n        \t\"IdOportunidade\": \"D98ED350-F25A-11E8-B7B6-40A3CC458FD9\",\n        \t\"NumProposta\": \"5\",\n            \"Artigo\": \"A0003\",\n            \"Quantidade\": \"1\",\n            \"PrecoCusto\": \"10\",\n            \"PrecoVenda\": \"5\",\n            \"Desconto1\": \"5\"\n        }\n    ],\n    \n    \"IdOportunidade\": \"D98ED350-F25A-11E8-B7B6-40A3CC458FD9\",\n    \"NumProposta\": \"5\"\n}"
+						},
+						"url": {
+							"raw": "{{apiUrl}}CRM/PropostasOPV/Actualiza/",
+							"host": [
+								"{{apiUrl}}CRM"
+							],
+							"path": [
+								"PropostasOPV",
+								"Actualiza",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transform sales opportunities ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"CodigoOPV\": \"OPV002\",\n    \"NumeroPropostaOPV\": 1\n}"
+						},
+						"url": {
+							"raw": "{{apiUrl}}CRM/PropostasOPV/GenerateDocument/V/ORC/A/",
+							"host": [
+								"{{apiUrl}}CRM"
+							],
+							"path": [
+								"PropostasOPV",
+								"GenerateDocument",
+								"V",
+								"ORC",
+								"A",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove oportunity",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{apiUrl}}CRM/OportunidadesVenda/Remove/OPV02",
+							"host": [
+								"{{apiUrl}}CRM"
+							],
+							"path": [
+								"OportunidadesVenda",
+								"Remove",
+								"OPV02"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove proposal",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{apiUrl}}CRM/PropostasOPV/Remove/D82A704A-F24E-11E8-B7B5-40A3CC458FD9/0",
+							"host": [
+								"{{apiUrl}}CRM"
+							],
+							"path": [
+								"PropostasOPV",
+								"Remove",
+								"D82A704A-F24E-11E8-B7B5-40A3CC458FD9",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get attributes value (Proposals)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n\t\"IdOportunidade\"\n]"
+						},
+						"url": {
+							"raw": "{{apiUrl}}CRM/PropostasOPV/DaValorAtributos/816B85C7-98E3-11DC-A3E8-0020E024149C/1/",
+							"host": [
+								"{{apiUrl}}CRM"
+							],
+							"path": [
+								"PropostasOPV",
+								"DaValorAtributos",
+								"816B85C7-98E3-11DC-A3E8-0020E024149C",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get attributes value (Sales opportunity)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{secondToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n\t\"Descricao\"\n]"
+						},
+						"url": {
+							"raw": "{{apiUrl}}CRM/OportunidadesVenda/DaValorAtributos/OPV001/",
+							"host": [
+								"{{apiUrl}}CRM"
+							],
+							"path": [
+								"OportunidadesVenda",
+								"DaValorAtributos",
+								"OPV001",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Accounting",
+			"item": [
+				{
+					"name": "Journal Entries",
+					"item": [
+						{
+							"name": "Edit Document",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{secondToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiUrl}}Contabilidade/Documentos/EditaComum/2018/51/110001",
+									"host": [
+										"{{apiUrl}}Contabilidade"
+									],
+									"path": [
+										"Documentos",
+										"EditaComum",
+										"2018",
+										"51",
+										"110001"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Documents",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{secondToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{apiUrl}}Contabilidade/Documentos/LstDocumentos",
+									"host": [
+										"{{apiUrl}}Contabilidade"
+									],
+									"path": [
+										"Documentos",
+										"LstDocumentos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Document Exists",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{secondToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{apiUrl}}Contabilidade/Documentos/Existe/2018/51/110001/000",
+									"host": [
+										"{{apiUrl}}Contabilidade"
+									],
+									"path": [
+										"Documentos",
+										"Existe",
+										"2018",
+										"51",
+										"110001",
+										"000"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit Document Draft",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{secondToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{apiUrl}}Contabilidade/Documentos/EditaRascunho/2018/51/110001/000",
+									"host": [
+										"{{apiUrl}}Contabilidade"
+									],
+									"path": [
+										"Documentos",
+										"EditaRascunho",
+										"2018",
+										"51",
+										"110001",
+										"000"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Creat Document",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{secondToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Ano\": 2018,\r\n    \"Diario\": \"51\",\r\n    \"Doc\": \"511\",\r\n    \"Dia\": 30,\r\n    \"Mes\": 11,\r\n    \"Terceiro\": \"SOFRIO\",\r\n    \"TipoTerceiro\": \"C\",\r\n    \"Moeda\": \"EUR\",\r\n    \"DataDoc\": \"2018-11-30\",\r\n    \"TipoLancamento\": \"000\",\r\n    \"LinhasGeral\": [\r\n        {\r\n            \"Conta\": \"21111001\",\r\n            \"TipoLinha\": \"F\",\r\n            \"Moeda\": \"EUR\",\r\n            \"Valor\": 1000.00,\r\n            \"Natureza\": \"D\",\r\n            \"Lote\": 1,\r\n            \"Entidade\": \"SOFRIO\",\r\n            \"TipoEntidade\": \"C\"\r\n        },\r\n        {\r\n            \"Conta\": \"7111\",\r\n            \"Iva\": \"13113201\",\r\n            \"TipoLinha\": \"F\",\r\n            \"Moeda\": \"EUR\",\r\n            \"Valor\": 833.3300,\r\n            \"Natureza\": \"C\",\r\n            \"Lote\": 2\r\n        },\r\n        {\r\n            \"Conta\": \"24331113201\",\r\n            \"TipoLinha\": \"F\",\r\n            \"Moeda\": \"EUR\",\r\n            \"Valor\": 166.6700,\r\n            \"Natureza\": \"C\",\r\n            \"Lote\": 2\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiUrl}}Contabilidade/Documentos/Actualiza",
+									"host": [
+										"{{apiUrl}}Contabilidade"
+									],
+									"path": [
+										"Documentos",
+										"Actualiza"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Atribute Value",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{secondToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"Valor do campos através da webapi\"",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiUrl}}Contabilidade/Documentos/ActualizaValorAtributo/2018/51/110001/Observacoes",
+									"host": [
+										"{{apiUrl}}Contabilidade"
+									],
+									"path": [
+										"Documentos",
+										"ActualizaValorAtributo",
+										"2018",
+										"51",
+										"110001",
+										"Observacoes"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Accounting Documents",
+					"item": [
+						{
+							"name": "List Documents",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{secondToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{apiUrl}}Contabilidade/TiposDocumento/LstTiposDocumento",
+									"host": [
+										"{{apiUrl}}Contabilidade"
+									],
+									"path": [
+										"TiposDocumento",
+										"LstTiposDocumento"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit Document",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{secondToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{apiUrl}}Contabilidade/TiposDocumento/Edita/2018/511/",
+									"host": [
+										"{{apiUrl}}Contabilidade"
+									],
+									"path": [
+										"TiposDocumento",
+										"Edita",
+										"2018",
+										"511",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Document Exist",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{secondToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{apiUrl}}Contabilidade/TiposDocumento/Existe/511",
+									"host": [
+										"{{apiUrl}}Contabilidade"
+									],
+									"path": [
+										"TiposDocumento",
+										"Existe",
+										"511"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Document",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{secondToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"EmModoEdicao\": false,\r\n    \"Ano\": 2018,\r\n\t\"Numerador\": 1,\r\n    \"Documento\": \"517\",\r\n    \"Descricao\": \"Vendas MN - n/Fatura\",\r\n    \"Diario\": \"51\",\r\n    \"BalFinanceira\": true,\r\n\t\"TipoLancamento\": \"000\",\r\n    \"IntegraCCT\": true,\r\n    \"DataIntegracaoCCT\": 1,\r\n    \"LinhasDocumento\": [\r\n        {\r\n            \"Documento\": \"511\",\r\n            \"Conta\": \"211?????\",\r\n            \"Natureza\": \"D\",\r\n            \"Grupo\": 0,\r\n            \"Repete\": true,\r\n            \"PoeValor\": true,\r\n            \"EmModoEdicao\": false,\r\n            \"SujeitaDuodecimos\": false,\r\n            \"Ano\": 0,\r\n            \"DescricaoEntidade\": \"\"\r\n        }\r\n    ]\r\n}"
+								},
+								"url": {
+									"raw": "{{apiUrl}}Contabilidade/TiposDocumento/Actualiza/avisos",
+									"host": [
+										"{{apiUrl}}Contabilidade"
+									],
+									"path": [
+										"TiposDocumento",
+										"Actualiza",
+										"avisos"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "apiUrl",
+			"value": "https://62.28.98.185/WebApi/"
+		}
+	]
+}
