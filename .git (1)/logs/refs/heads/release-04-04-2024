@@ -1,6 +1,0 @@
-0000000000000000000000000000000000000000 5b3dee543053f00351b659c525754c9433c476eb Diogo Guedes <diogo.guedes@integer.pt> 1711975167 +0100	branch: Created from origin/release-04-04-2024
-5b3dee543053f00351b659c525754c9433c476eb 9e24dd13c1ae7cb6d4f52b95cc8e5ccfb0e09db4 Diogo Guedes <diogo.guedes@integer.pt> 1711975173 +0100	pull origin dev: Merge made by the 'ort' strategy.
-9e24dd13c1ae7cb6d4f52b95cc8e5ccfb0e09db4 63edea1b81b2e2ce87bbeda5cde1a7619f4b2a58 Diogo Guedes <diogo.guedes@integer.pt> 1712142368 +0100	pull origin feature/4-2-update-drawers-last-shops-table: Merge made by the 'ort' strategy.
-63edea1b81b2e2ce87bbeda5cde1a7619f4b2a58 4607c34f9bc1923fbfa34abc5b9e3c54984fd77a Diogo Guedes <diogo.guedes@integer.pt> 1712158019 +0100	commit: Fixes and improvements for release 04-04-2024
-4607c34f9bc1923fbfa34abc5b9e3c54984fd77a 6a61e34c1aa5862d39b0130cb6a53a22e75aebb2 Diogo Guedes <diogo.guedes@integer.pt> 1712239794 +0100	commit: Fixes and improvements for release 04-04-2024
-6a61e34c1aa5862d39b0130cb6a53a22e75aebb2 2fdf6162832a9ae6499436255513772663399ed8 Diogo Guedes <diogo.guedes@integer.pt> 1712325442 +0100	commit: Fixes and improvements for release 04-04-2024

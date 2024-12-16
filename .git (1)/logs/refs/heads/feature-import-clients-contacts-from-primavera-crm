@@ -1,4 +1,0 @@
-0000000000000000000000000000000000000000 17562e9d0b5a6b75d04489922ce7055848ef5ba7 Diogo Guedes <diogo.guedes@integer.pt> 1713264034 +0100	branch: Created from HEAD
-17562e9d0b5a6b75d04489922ce7055848ef5ba7 5f0d935dd127ccda7247872cff461973c7f5be7b Diogo Guedes <diogo.guedes@integer.pt> 1713264056 +0100	commit: Create database structure
-5f0d935dd127ccda7247872cff461973c7f5be7b bbb8fef657e681885b2ad09dbb1db50b7c1f3ed2 Diogo Guedes <diogo.guedes@integer.pt> 1713431931 +0100	commit: Import contacts from Primavera client CRM and modify call center and addresses
-bbb8fef657e681885b2ad09dbb1db50b7c1f3ed2 00ed546d53b576a757279a7f58ca7cea126d2403 Diogo Guedes <diogo.guedes@integer.pt> 1713776946 +0100	commit: Change customer MoradasAlternativas index key

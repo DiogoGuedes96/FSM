@@ -1,4 +1,0 @@
-0000000000000000000000000000000000000000 6acf5d8b9842807b128a76a099e473ffcfc3365f Diogo Guedes <diogo.guedes@integer.pt> 1713798265 +0100	branch: Created from HEAD
-6acf5d8b9842807b128a76a099e473ffcfc3365f c4225a9d18568450a2a20235d98e3f488cb50808 Diogo Guedes <diogo.guedes@integer.pt> 1713798367 +0100	commit: Sent order to primavera when delivering state and no EC generated
-c4225a9d18568450a2a20235d98e3f488cb50808 deaf4474ea7d3ab62a05380abd2a8136107bce71 Diogo Guedes <diogo.guedes@integer.pt> 1713961183 +0100	commit (merge): Merge branch 'dev' of ssh.dev.azure.com:v3/integer-consulting/Frutaria_Sao_Miguel/Frutaria_Sao_Miguel into feature/send-order-to-primavera-in-delivering-state
-deaf4474ea7d3ab62a05380abd2a8136107bce71 cf1fe47f0008f772739559e627953930d4b02535 Diogo Guedes <diogo.guedes@integer.pt> 1713974165 +0100	commit: Fix delivery date in the past
